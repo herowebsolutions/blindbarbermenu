@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/blindbarbermenu/static/css/main.dc39cc50.css",
-    "main.js": "/blindbarbermenu/static/js/main.65828341.js",
+    "main.js": "/blindbarbermenu/static/js/main.e201abcc.js",
     "static/js/787.4ea42b00.chunk.js": "/blindbarbermenu/static/js/787.4ea42b00.chunk.js",
     "index.html": "/blindbarbermenu/index.html",
     "main.dc39cc50.css.map": "/blindbarbermenu/static/css/main.dc39cc50.css.map",
-    "main.65828341.js.map": "/blindbarbermenu/static/js/main.65828341.js.map",
+    "main.e201abcc.js.map": "/blindbarbermenu/static/js/main.e201abcc.js.map",
     "787.4ea42b00.chunk.js.map": "/blindbarbermenu/static/js/787.4ea42b00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc39cc50.css",
-    "static/js/main.65828341.js"
+    "static/js/main.e201abcc.js"
   ]
 }
