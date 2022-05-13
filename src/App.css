@@ -1,7 +1,33 @@
 .App {
   text-align: center;
 }
-
+@font-face {
+  font-family: "KnockoutBold";
+  src: local("KnockoutBold"),
+   url("./fonts/Knockout.otf") format("truetype");
+  
+  }
+  .font-face-ko {
+    font-family: "KnockoutBold";
+   }
+   @font-face {
+    font-family: "GaramondItalic";
+    src: local("GaramondItalic"),
+     url("./fonts/AppleGaramond-LightItalic.ttf") format("truetype");
+    font-size: x-small;
+    }
+    .font-face-ga {
+      font-family: "GaramondItalic";
+     } 
+     @font-face {
+      font-family: "Proxima";
+      src: local("Proxima"),
+       url("./fonts/proximanova-bold.otf") format("truetype");
+     
+      }
+      .font-face-px {
+        font-family: "Proxima";
+       }   
 .App-logo {
   height: 40vmin;
   pointer-events: none;
