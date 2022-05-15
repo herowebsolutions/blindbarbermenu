@@ -2,7 +2,7 @@ import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import content from './content'
 
-export default function Home() {
+export default function Wine() {
   return (
     <div className=' min-h-screen pt-8 mb-0 flex items-center sm:border-0 sm:border-none justify-center bg-primary' id='page2'>
     <div className=' p-8 max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 '>

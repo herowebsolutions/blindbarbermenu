@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import content from './content'
+import {Link} from 'react-router-dom';
 export default function Specialty ({
   shaken,
   stirred,
@@ -29,6 +30,7 @@ export default function Specialty ({
               abide by our posted safety precautions.
             </p>
           </div>
+          <Link to='/'>Home</Link>
           <div className='flex justify-between'>
             <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>Specialty Cocktails</h1>
             <h1 className='pt-8 text-sm font-face-ko tracking-wide'>
