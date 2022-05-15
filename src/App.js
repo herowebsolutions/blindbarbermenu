@@ -117,7 +117,7 @@ function App () {
   ]
   return (
     <>
-      <Router basename='/blindbarbermenu'>
+      <Router>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/happy-hour' element={<HappyHour />} />
