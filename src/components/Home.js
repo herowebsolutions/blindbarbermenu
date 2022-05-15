@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import content from './content'
-import { Link } from 'react-router-dom'
 export default function Specialty () {
   return (
     <>

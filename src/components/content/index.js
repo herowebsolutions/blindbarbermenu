@@ -1,4 +1,4 @@
-export default {
+const content = {
   nav: {
     logo: process.env.PUBLIC_URL + '/assets/BBlogo.png',
     workLink: ['Specialty', 'Wine', 'Beer', 'Zero Proof']
@@ -125,3 +125,4 @@ export default {
     }
   ]
 }
+export default content;
