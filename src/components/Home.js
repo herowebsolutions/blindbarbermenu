@@ -24,7 +24,10 @@ export default function Specialty () {
               abide by our posted safety precautions.
             </p>
           </div>
-          <Link to='/happy-hour'>Happy Hour</Link>
+          <div className='flex justify-between'>
+            <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>Home</h1>
+            
+          </div>
 
           <div className='text-center mt-10'>
             <ScrollLink to='page2' smooth={true}>

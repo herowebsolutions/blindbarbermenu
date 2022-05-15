@@ -120,9 +120,9 @@ function App () {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/happy-hour' element={<HappyHour />} />
+          <Route path='/chicago-happy-hour' element={<HappyHour />} />
           <Route
-            path='/full-menu'
+            path='/chicago-menu'
             element={
               <>
                 <Navigation />

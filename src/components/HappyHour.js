@@ -24,8 +24,11 @@ export default function Specialty () {
               abide by our posted safety precautions.
             </p>
           </div>
-          <Link to='/'>Home</Link>
-
+         
+          <div className='flex justify-between'>
+            <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>Happy Hour Menu</h1>
+            
+          </div>
           <div className='text-center mt-10'>
             <ScrollLink to='page2' smooth={true}>
               <button className=' animate-bounce py-2 focus:outline-none '>
