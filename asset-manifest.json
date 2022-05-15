@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/blindbarbermenu/static/css/main.9d555bda.css",
-    "main.js": "/blindbarbermenu/static/js/main.245e146c.js",
+    "main.js": "/blindbarbermenu/static/js/main.211a078d.js",
     "static/js/787.4ea42b00.chunk.js": "/blindbarbermenu/static/js/787.4ea42b00.chunk.js",
     "static/media/proximanova-bold.otf": "/blindbarbermenu/static/media/proximanova-bold.09394b2afc53828fe342.otf",
     "static/media/AppleGaramond-LightItalic.ttf": "/blindbarbermenu/static/media/AppleGaramond-LightItalic.757e95d909eab5edec81.ttf",
     "static/media/Knockout.otf": "/blindbarbermenu/static/media/Knockout.39c4a186ee85a2c00e73.otf",
     "index.html": "/blindbarbermenu/index.html",
     "main.9d555bda.css.map": "/blindbarbermenu/static/css/main.9d555bda.css.map",
-    "main.245e146c.js.map": "/blindbarbermenu/static/js/main.245e146c.js.map",
+    "main.211a078d.js.map": "/blindbarbermenu/static/js/main.211a078d.js.map",
     "787.4ea42b00.chunk.js.map": "/blindbarbermenu/static/js/787.4ea42b00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d555bda.css",
-    "static/js/main.245e146c.js"
+    "static/js/main.211a078d.js"
   ]
 }
