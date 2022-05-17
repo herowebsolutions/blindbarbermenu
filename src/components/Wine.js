@@ -41,13 +41,7 @@ export default function Wine ({ wine }) {
           ))}
         </div>
 
-        <div className='text-center mt-10'>
-          <ScrollLink to='page2' smooth={true}>
-            <button className=' animate-bounce py-2 focus:outline-none '>
-              {content.header.btnText}
-            </button>
-          </ScrollLink>
-        </div>
+       
       </div>
     </div>
   )

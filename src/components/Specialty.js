@@ -24,7 +24,7 @@ export default function Specialty ({
           <div
             className=' w-32 mx-auto pt-12'
             data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-offset='0'
           >
             <img
@@ -36,7 +36,7 @@ export default function Specialty ({
           <div
             className='pt-4'
             data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-offset='0'
           >
             <p className='italic text-center text-xs font-face-ga'>
@@ -49,7 +49,7 @@ export default function Specialty ({
           <div
             className='flex justify-between'
             data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-delay='100'
             data-aos-offset='0'
           >
@@ -69,7 +69,7 @@ export default function Specialty ({
             <h1
               className='pt-3 text-xl text-center font-semibold uppercase font-face-ko tracking-widest'
               data-aos='fade-zoom-in'
-              data-aos-easing='ease-in-back'
+              data-aos-easing='ease-in-sine'
               data-aos-delay='200'
               data-aos-offset='0'
             >
@@ -79,7 +79,7 @@ export default function Specialty ({
           <div
             className='text-primary py-3 '
             data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-delay='300'
             data-aos-offset='0'
           >
@@ -97,7 +97,7 @@ export default function Specialty ({
           </div>
           <div>
             <h1 className='text-xl text-center font-semibold uppercase font-face-ko tracking-widest' data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-delay='500'
             data-aos-offset='0'>
               Stirred
@@ -105,7 +105,7 @@ export default function Specialty ({
           </div>
 
           <div className='text-primary py-3' data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-back'
+            data-aos-easing='ease-in-sine'
             data-aos-delay='500'
             data-aos-offset='0'>
             {stirred.map(i => (
@@ -196,13 +196,7 @@ export default function Specialty ({
             ))}
           </div>
 
-          <div className='text-center mt-10'>
-            <ScrollLink to='page2' smooth={true}>
-              <button className=' animate-bounce py-2 focus:outline-none '>
-                {content.header.btnText}
-              </button>
-            </ScrollLink>
-          </div>
+          
         </div>
       </div>
     </>
