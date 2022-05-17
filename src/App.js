@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Specialty from './components/Specialty'
@@ -115,6 +116,54 @@ function App () {
       ingredients: 'Jim Beam Black + fizzy soda water'
     }
   ]
+  const wine = [
+    {
+      id: 1,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+    {
+      id: 2,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+  ]
+  const beer = [
+    {
+      id: 1,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+    {
+      id: 2,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+  ]
+  const zeroProof = [
+    {
+      id: 1,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+    {
+      id: 2,
+      name: 'Paradise Ginza',
+      price: '$13',
+      desc: 'classic Japanese highball',
+      ingredients: 'Suntory Toki Japanese Whisky + fizzy soda water'
+    },
+  ]
   return (
     <>
       <Router>
@@ -133,9 +182,9 @@ function App () {
                   houseSpecials={houseSpecials}
                   highball={highball}
                 />
-                <Wine />
-                <Beer />
-                <ZeroProof />
+                <Wine wine={wine}/>
+                <Beer beer={beer} />
+                <ZeroProof zeroProof={zeroProof}/>
               </>
             }
           />

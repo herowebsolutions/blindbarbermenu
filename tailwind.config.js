@@ -713,7 +713,8 @@ module.exports = {
     },
     animation: {
       none: 'none',
-      spin: 'spin 1s linear infinite',
+      spin: 'spin 3s linear infinite',
+      wiggle: 'wiggle 1s ease-in-out infinite',
       ping: 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 2s infinite',
@@ -721,6 +722,10 @@ module.exports = {
       refloat: 'refloat 3.5s '
     },
     keyframes: {
+      wiggle: {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
+      },
       spin: {
         to: { transform: 'rotate(360deg)' }
       },

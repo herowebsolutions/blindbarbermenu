@@ -1,7 +1,12 @@
-import React from 'react'
-import { Link as ScrollLink } from 'react-scroll'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import content from './content'
+
 export default function Specialty () {
+  const [animated, setAnimated] = useState(false)
+  useEffect(() => {
+    setAnimated(true)
+  }, [])
   return (
     <>
       <div
@@ -9,32 +14,38 @@ export default function Specialty () {
         id='specialty'
       >
         <div className=' max-w-7xl h-full mx-auto py-6 sm:px-5 lg:px-8 '>
-          <div className=' w-32 mx-auto pt-12'>
+          <div className='w-64 mx-auto pt-32'>
             <img
               src={content.nav.logo}
               placeholder={content.header.imgPlaceholder}
               alt='Blind Barber Logo'
+              className={`${
+                animated ? '' : 'translate-y-5 opacity-0'
+              } transform transition duration-1000 ease-in-out`}
             />
           </div>
-          <div className='pt-4'>
-            <p className='italic text-center text-xs font-face-ga'>
-              Thank you for being safe and supporting the Blind Barber team. We
-              reserve the right to deny service to anyone that chooses not to
-              abide by our posted safety precautions.
-            </p>
-          </div>
-          <div className='flex justify-between'>
-            <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>Home</h1>
-            
+
+          <div
+            className={`${
+              animated ? '' : 'translate-y-5 opacity-0'
+            } transform transition duration-1000 ease-in-out text-center pt-16`}
+          >
+           
+              <Link
+                className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+                
+                to='/chicago-menu'
+              >Chicago Menu</Link>
+           
           </div>
 
-          <div className='text-center mt-10'>
+          {/* <div className='text-center mt-10'>
             <ScrollLink to='page2' smooth={true}>
               <button className=' animate-bounce py-2 focus:outline-none '>
                 {content.header.btnText}
               </button>
             </ScrollLink>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
