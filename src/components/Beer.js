@@ -9,39 +9,48 @@ export default function Beer ({ beer }) {
       id='beer'
     >
       <div className=' max-w-7xl h-full mx-auto py-6 sm:px-5 lg:px-8 '>
-        <div className='flex justify-between'>
-          <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-            Beer
-          </h1>
-          <h1 className='pt-8 text-sm font-face-ko tracking-wide'>
-            $<span className='pt-8 text-2xl'>15</span>
-          </h1>
-        </div>
-        <div className='relative'>
-          <div className='  flex items-center' aria-hidden='true'>
-            <div className='w-full border-t border-gray-300' />
+      <div className='text-primary py-3'
+      data-aos='fade-zoom-in'
+      data-aos-easing='ease-in-sine'
+      data-aos-delay='100'>
+            {Object.keys(beer).map(head => (
+              <div key={head} className='relative'>
+                <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-64 lg:px-4 '>
+                <div className='flex justify-center mt-6'>
+                    <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
+                      {head}
+                    </h1>
+                    
+                  </div>
+                  <div className='w-full border-t border-gray-300' />
+                </div>
+                <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+                  {beer[head].map(item => (
+                    <li key={item.id}>
+                      <div className='relative px-6 py-1 flex  space-x-3 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
+                        <div className='flex-shrink-0'></div>
+                        <div className='flex-1 min-w-0'>
+                          <span
+                            className='absolute inset-0'
+                            aria-hidden='true'
+                          />
+                          <h1 className='text-md flex justify-between uppercase font-semibold font-face-px tracking-widest'>
+                            {item.name} <span>{item.price}</span>
+                          </h1>
+                          
+                          <h3 className='text-md font-face-ga tracking-wide'>
+                            {item.desc} {item.origin}
+                          </h3>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-        </div>
-        <div>
-          <h1 className='pt-3 text-xl text-center font-semibold uppercase font-face-ko tracking-widest'>
-            Shaken
-          </h1>
-        </div>
-        <div className='text-primary py-3 '>
-          {beer.map(i => (
-            <div key={i.id}>
-              <h1 className='text-md uppercase font-face-px tracking-widest'>
-                {i.name}
-              </h1>
-              <p className='font-face-ga text-xs'>{i.desc}</p>
-              <h3 className='text-md font-face-ga pb-4 tracking-wide'>
-                {i.ingredients}
-              </h3>
-            </div>
-          ))}
-        </div>
 
-        
+       
       </div>
     </div>
   )
