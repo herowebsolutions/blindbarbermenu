@@ -3,7 +3,7 @@ const content = {
     logo: process.env.PUBLIC_URL + '/assets/BBlogo.png',
     favicon: process.env.PUBLIC_URL + '/assets/BBlogoCrop.png',
     faviconWhite: process.env.PUBLIC_URL + '/assets/BBlogowhitecrop.png',
-    workLink: ['Cocktails', 'Other']
+    workLink: ['Cocktails', 'Wine', 'Beer', 'Zero Proof']
   },
   header: {
     img: process.env.PUBLIC_URL + '/assets/developer.png',

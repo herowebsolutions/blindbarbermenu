@@ -399,7 +399,8 @@ function App () {
       {
         id: 1,
         name: 'Olive You',
-        ingredients: 'Castelvetrano, Bella di Cerignola, Gaeta, Italian olive oil',
+        ingredients:
+          'Castelvetrano, Bella di Cerignola, Gaeta, Italian olive oil',
         price: '7'
       },
       {
@@ -414,9 +415,7 @@ function App () {
         name: 'Fries',
         ingredients: 'House-cut Kennebec potato, sea salt',
         price: '8'
-      },
-      
-      
+      }
     ]
   }
   return (
@@ -437,19 +436,15 @@ function App () {
                   fancy={fancy}
                   nightCaps={nightCaps}
                 />
-                {/* <Wine wine={wine}/> */}
-                {/* <Beer beer={beer} /> */}
-                <Other
-                  other={other}
-                  draft={draft}
-                  canned={canned}
+                <Wine
                   white={white}
                   red={red}
                   rose={rose}
                   bubbles={bubbles}
                   champagne={champagne}
-                  snacks={snacks}
                 />
+                <Beer draft={draft} canned={canned} />
+                <Other other={other} snacks={snacks} />
               </>
             }
           />
