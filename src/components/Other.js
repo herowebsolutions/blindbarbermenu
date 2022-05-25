@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link as ScrollLink } from 'react-scroll'
-import content from './content'
+// import { Link as ScrollLink } from 'react-scroll'
+// import content from './content'
 
 export default function Other ({
   other,
@@ -67,12 +67,12 @@ export default function Other ({
               <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
                 {snacks[head].map(item => (
                   <li key={item.id}>
-                    <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
+                    <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500 '>
                       <div className='flex-shrink-0'></div>
-                      <div className='flex-1 min-w-0'>
+                      <div className='flex-1 min-w-0 '>
                         <span className='absolute inset-0' aria-hidden='true' />
-                        <h1 className='text-md flex justify-between uppercase font-semibold font-face-px tracking-widest'>
-                          {item.name},<span className='mr-12 text-left lg:mr-64 italic lowercase'>{item.desc}</span> <span className='lg:ml-20'>{item.price}</span>
+                        <h1 className='text-md flex justify-between uppercase font-semibold font-face-px tracking-widest '>
+                          {item.name}<span className='mr-12 text-md xl:mr-64 xl:pr-24 md:pr-10 md:mr-64 italic lowercase'>{item.desc}</span> <span className='lg:ml-64 md:ml-64'>{item.price}</span>
                         </h1>
 
                         {/* <h3 className='text-md font-face-ga tracking-wide'>

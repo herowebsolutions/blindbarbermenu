@@ -413,7 +413,7 @@ function App () {
       },
       {
         id: 2,
-        name: 'Crab Rangoon',
+        name: 'Crab Rangoon,',
         desc: '5 Pieces',
         ingredients: 'Everything seasoning, Thai sweet chili',
         price: '9'
