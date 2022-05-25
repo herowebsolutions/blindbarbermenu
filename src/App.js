@@ -6,6 +6,7 @@ import Navigation from './components/Navigation'
 import Wine from './components/Wine'
 import Beer from './components/Beer'
 import Other from './components/Other'
+import Spirits from './components/Spirits'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import HappyHour from './components/HappyHour'
@@ -128,8 +129,8 @@ function App () {
       }
     ]
   }
-  const highball = {
-    highball: [
+  const highballs = {
+    highballs: [
       {
         id: 1,
         name: 'Dirty Shirley',
@@ -163,50 +164,49 @@ function App () {
       }
     ]
   }
-  const white = {
-    white: [
+  const wine = {
+    wine: [
       {
         id: 1,
         name: 'Bombino Blanco Valentina Passalacqua',
         price: '$14/$62',
         origin: 'Puglia, Italy',
-        vol: '11'
+        vol: '11°',
+        title: 'white'
       },
       {
         id: 2,
         name: 'Pinot Gris Domaine Paul Blanck',
         price: '$14/$62',
         origin: 'Alsace, France',
-        vol: '13'
-      }
-    ]
-  }
-  const red = {
-    red: [
+        vol: '13°'
+      },
       {
-        id: 1,
+        id: 3,
         name: 'Pipeńo Cacique Maravilla',
         price: '$14/$62',
         origin: 'Bio Bio Valley, Chile',
-        vol: '12.5'
+        vol: '12.5°',
+        title: 'red'
       },
       {
-        id: 2,
+        id: 4,
         name: 'No Fine Print',
         price: '$12/$54',
         origin: 'Lake County, CA',
-        vol: '14.5'
+        vol: '14.5°'
       }
     ]
   }
+ 
   const rose = {
     rosé: [
       {
         id: 1,
-        name: 'Jeio Cuvee Sprakling',
+        name: 'Jeio Cuvee Sparkling Rosé',
         price: '$14/$62',
         origin: 'Veneto, Italy',
-        vol: '11.5'
+        vol: '11.5°'
       }
     ]
   }
@@ -214,17 +214,24 @@ function App () {
     bubbles: [
       {
         id: 1,
-        name: 'Chandon Garden Spritz',
-        price: '$13',
-        origin: 'Mendoza, Argentina',
-        vol: '11'
+        name: 'Jeio Cuvee Sparkling Rosé',
+        price: '$14/$62',
+        origin: 'Veneto, Italy',
+        vol: '11.5°'
       },
       {
         id: 2,
+        name: 'Chandon Garden Spritz Split',
+        price: '$13',
+        origin: 'Mendoza, Argentina',
+        vol: '11°'
+      },
+      {
+        id: 3,
         name: 'Campa Viejo Cava',
         price: '$14/$62',
         origin: 'Logrono, Spain',
-        vol: '11.5'
+        vol: '11.5°'
       }
     ]
   }
@@ -235,28 +242,28 @@ function App () {
         name: 'Moët Split',
         price: '$25',
         origin: 'Champagne, France',
-        vol: '12.2'
+        vol: '12.2°'
       },
       {
         id: 2,
         name: 'Veuve Clicquot Viejo Cava',
         price: '$200',
         origin: 'Champagne, France',
-        vol: '12'
+        vol: '12°'
       },
       {
         id: 3,
         name: 'Veuve Clicquot Rosé',
         price: '$225',
         origin: 'Champagne, France',
-        vol: '12.5'
+        vol: '12.5°'
       },
       {
         id: 4,
         name: 'Dom Pérignon',
         price: '$450',
         origin: 'Champagne, France',
-        vol: '12.5'
+        vol: '12.5°'
       }
     ]
   }
@@ -264,106 +271,107 @@ function App () {
     draft: [
       {
         id: 1,
-        name: 'Cigar City Guayabera',
-        price: '$9',
-        desc: 'Citra Pale Ale',
-        vol: '5.5'
-      },
-      {
-        id: 2,
         name: 'Michelob Ultra',
         price: '$8',
         desc: 'Light Lager',
-        vol: '4.2'
+        vol: '4.2°'
       },
       {
-        id: 3,
+        id: 2,
         name: 'Cruz Blanca Mexico Calling',
         price: '$9',
         desc: 'Lager',
-        vol: '4.7'
+        vol: '4.7°'
       },
+      
       {
-        id: 4,
+        id: 3,
         name: 'Goose Island Neon Beer Hug',
         price: '$9',
         desc: 'IPA',
-        vol: '7.0'
-      }
+        vol: '7.0°'
+      },
+      {
+        id: 4,
+        name: 'Cigar City Guayabera',
+        price: '$9',
+        desc: 'Citra Pale Ale',
+        vol: '5.5°'
+      },
     ]
   }
   const canned = {
     canned: [
       {
         id: 1,
-        name: 'Estrella Jalisco',
-        price: '$8',
-        desc: 'Mexican Lager',
-        vol: '4.5'
-      },
-      {
-        id: 2,
         name: 'Bud Light',
         price: '$6',
         desc: 'Light Lager',
-        vol: '4.2'
+        vol: '4.2°'
       },
       {
-        id: 3,
+        id: 2,
         name: 'Budweiser',
         price: '$6',
         desc: 'American Pale Lager',
-        vol: '5.0'
+        vol: '5.0°'
+      },
+      {
+        id: 3,
+        name: 'Estrella Jalisco',
+        price: '$8',
+        desc: 'Mexican Lager',
+        vol: '4.5°'
       },
       {
         id: 4,
         name: 'Spiteful IPA',
         price: '$8',
         desc: 'IPA',
-        vol: '6.2'
+        vol: '6.2°'
       },
       {
         id: 5,
-        name: 'Virtue Brut Cider',
-        price: '$7',
-        desc: 'Farmnhouse Cider',
-        vol: '6.7'
-      },
-      {
-        id: 6,
         name: 'Kona Big Wave',
         price: '$7',
         desc: 'Golden Ale',
-        vol: '4.4'
+        vol: '4.4°'
       },
       {
-        id: 7,
+        id: 6,
         name: 'Golden Road',
         price: '$7',
         desc: 'Mango Wheat Ale',
-        vol: '5.0'
+        vol: '5.0°'
+      },
+      {
+        id: 7,
+        name: 'Virtue Brut Cider',
+        price: '$7',
+        desc: 'Farmnhouse Cider',
+        vol: '6.7°'
       },
       {
         id: 8,
-        name: 'High Noon',
-        price: '$9',
-        desc: 'Hard Seltzer',
-        vol: '4.5'
-      },
-      {
-        id: 9,
         name: 'Luna Bay Palo Santo Blueberry',
         price: '$7',
         desc: 'Hard Kombucha',
-        vol: '6.0'
+        vol: '6.0°'
       },
       {
-        id: 10,
+        id: 9,
         name: 'Luna Bay Raspberry Rose',
         price: '$7',
         desc: 'Hard Kombucha',
-        vol: '6.0'
-      }
+        vol: '6.0°'
+      },
+      {
+        id: 10,
+        name: 'High Noon',
+        price: '$9',
+        desc: 'Hard Seltzer',
+        vol: '4.5°'
+      },
     ]
   }
   const other = {
@@ -378,7 +386,7 @@ function App () {
         id: 2,
         name: 'Red Bull',
         price: '$5',
-        desc: 'Regular | Sugar-Free | Seasonal | Coco-Berry'
+        desc: 'Regular | Sugar-Free | Seasonal, Coco-Berry'
       },
       {
         id: 3,
@@ -418,6 +426,25 @@ function App () {
       }
     ]
   }
+  const spirits = {
+    spirits: [
+      {
+        id: 1,
+        name: 'Bombino Blanco Valentina Passalacqua',
+        price: '$14/$62',
+        origin: 'Puglia, Italy',
+        vol: '11°',
+        title: 'Tequila'
+      },
+      {
+        id: 2,
+        name: 'Pinot Gris Domaine Paul Blanck',
+        price: '$14/$62',
+        origin: 'Alsace, France',
+        vol: '13°'
+      },
+    ]
+  }
   return (
     <>
       <Router>
@@ -432,19 +459,20 @@ function App () {
                 <Cocktails
                   signature={signature}
                   classic={classic}
-                  highball={highball}
+                  highballs={highballs}
                   fancy={fancy}
                   nightCaps={nightCaps}
                 />
                 <Wine
-                  white={white}
-                  red={red}
+                  wine={wine}
                   rose={rose}
                   bubbles={bubbles}
                   champagne={champagne}
                 />
                 <Beer draft={draft} canned={canned} />
                 <Other other={other} snacks={snacks} />
+                <Spirits spirits={spirits} />
+
               </>
             }
           />

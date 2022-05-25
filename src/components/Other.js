@@ -72,12 +72,12 @@ export default function Other ({
                       <div className='flex-1 min-w-0'>
                         <span className='absolute inset-0' aria-hidden='true' />
                         <h1 className='text-md flex justify-between uppercase font-semibold font-face-px tracking-widest'>
-                          {item.name} <span>{item.price}</span>
+                          {item.name},<span className='mr-12 text-left lg:mr-64 italic lowercase'>{item.desc}</span> <span className='lg:ml-20'>{item.price}</span>
                         </h1>
 
-                        <h3 className='text-md font-face-ga tracking-wide'>
+                        {/* <h3 className='text-md font-face-ga tracking-wide'>
                           {item.desc}
-                        </h3>
+                        </h3> */}
                         <h3 className='text-md font-face-ga tracking-wide'>
                           {item.ingredients}
                         </h3>
