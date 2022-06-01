@@ -24,7 +24,7 @@ function App () {
         id: 2,
         name: 'Hot Heather',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Patron Blanco Tequila, Mango Brandy, grapefruit, ginger, lemon`
+        ingredients: `Patron Blanco Tequila, mango brandy, grapefruit, ginger, lime`
       },
       {
         id: 3,
@@ -54,7 +54,7 @@ function App () {
         id: 7,
         name: 'Adult Swim',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Maker's Mark, Amontillado Sherry, China-China, raspberry, cacao`
+        ingredients: `Maker's Mark, amontillado sherry, China-China, cacao`
       }
     ]
   }
@@ -64,7 +64,7 @@ function App () {
         id: 1,
         name: 'Rum Punch',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Bacardi, RumHaven, Creme de Banané, pineaple, lime, demerara`
+        ingredients: `Bacardi 8, RumHaven, Creme de Banané, pineaple, lime, demerara`
       },
 
       {
@@ -77,7 +77,7 @@ function App () {
         id: 3,
         name: 'Dirty Martini',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Botanist Gin, demerara, dry vermouth, olive brine`
+        ingredients: `Botanist Gin, dry vermouth, olive brine`
       }
     ]
   }
@@ -87,7 +87,7 @@ function App () {
         id: 1,
         name: 'Fancy Old Fashioned',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Legent Kentucky, Straight Bourbon, demerara, bitters, orange oil`
+        ingredients: `Legent Bourbon, demerara, angostura, orange`
       },
       {
         id: 2,
@@ -136,7 +136,7 @@ function App () {
         name: 'Dirty Shirley',
         desc: 'classic Japanese highball',
         ingredients:
-          'Haku Vodka, Pomegranate, Lemon, Lime + very fizzy soda water',
+          'Haku Vodka, pomegranate, lemon, lime + very fizzy soda water',
         price: '$11'
       },
       {
@@ -372,6 +372,13 @@ function App () {
         desc: 'Hard Seltzer',
         vol: '4.5°'
       },
+      {
+        id: 11,
+        name: 'Athletic Brewing Upside Dawn',
+        price: '$8',
+        desc: 'Non-Alcoholic Golden Style Ale',
+        vol: '0.5°'
+      }
     ]
   }
   const other = {
@@ -386,7 +393,7 @@ function App () {
         id: 2,
         name: 'Red Bull',
         price: '$5',
-        desc: 'Regular | Sugar-Free | Seasonal, Coco-Berry'
+        desc: 'Regular | Sugar-Free | Watermelon'
       },
       {
         id: 3,
@@ -413,7 +420,7 @@ function App () {
       },
       {
         id: 2,
-        name: 'Crab Rangoon,',
+        name: 'Crab Rangoon',
         desc: '5 Pieces',
         ingredients: 'Everything seasoning, Thai sweet chili',
         price: '9'

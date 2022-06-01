@@ -7,7 +7,7 @@ export default function Spirits ({ spirits }) {
       className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
       id='spirits'
     >
-      <div className=' max-w-7xl h-full mx-auto  sm:px-5 lg:px-8 '>
+      <div className=' max-w-7xl h-full mx-auto  sm:px-1 lg:px-8 '>
         {/* TEQUILA */}
 
         <div className='text-primary py-3'>

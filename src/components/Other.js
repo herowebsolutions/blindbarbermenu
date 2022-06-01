@@ -11,7 +11,7 @@ export default function Other ({
       className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
       id='other'
     >
-      <div className=' max-w-7xl h-full mx-auto py-6 sm:px-5 lg:px-8 '>
+      <div className=' max-w-7xl h-full mx-auto py-6 sm:px-1 lg:px-8 '>
         {/* OTHER */}
         <div className='text-primary py-3 text-center'>
           {Object.keys(other).map(head => (
@@ -72,12 +72,12 @@ export default function Other ({
                       <div className='flex-1 min-w-0 '>
                         <span className='absolute inset-0' aria-hidden='true' />
                         <h1 className='text-md flex justify-between uppercase font-semibold font-face-px tracking-widest '>
-                          {item.name}<span className='mr-12 text-md xl:mr-64 xl:pr-24 md:pr-10 md:mr-64 italic lowercase'>{item.desc}</span> <span className='lg:ml-64 md:ml-64'>{item.price}</span>
+                          {item.name} <span className='lg:ml-64 md:ml-64'>{item.price}</span>
                         </h1>
 
-                        {/* <h3 className='text-md font-face-ga tracking-wide'>
+                        <h3 className='text-md font-extrabold font-face-ga tracking-wide'>
                           {item.desc}
-                        </h3> */}
+                        </h3>
                         <h3 className='text-md font-face-ga tracking-wide'>
                           {item.ingredients}
                         </h3>

@@ -20,7 +20,7 @@ export default function Cocktails ({
         className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
         id='cocktails'
       >
-        <div className=' max-w-7xl h-full mx-auto py-4 sm:px-4 lg:px-8 '>
+        <div className=' max-w-7xl h-full mx-auto py-4 sm:px-1 lg:px-8 '>
           <div
             className=' w-32 mx-auto pt-12'
             data-aos='fade-zoom-in'
@@ -37,7 +37,7 @@ export default function Cocktails ({
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine'
           >
-            <p className='italic text-center text-xs font-face-ga lg:mx-64'>
+            <p className='italic text-center text-xs font-face-ga sm:px-4 lg:mx-64'>
               Thank you for being safe and supporting the Blind Barber team. We
               reserve the right to deny service to anyone that chooses not to
               abide by our posted safety precautions.

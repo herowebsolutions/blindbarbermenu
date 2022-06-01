@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link as ScrollLink } from 'react-scroll'
-import content from './content'
+// import { Link as ScrollLink } from 'react-scroll'
+// import content from './content'
 
 export default function Beer ({ draft, canned }) {
   return (
@@ -8,7 +8,7 @@ export default function Beer ({ draft, canned }) {
       className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
       id='beer'
     >
-      <div className=' max-w-7xl h-full mx-auto py-6 sm:px-5 lg:px-8 '>
+      <div className=' max-w-7xl h-full mx-auto py-6 sm:px-1 lg:px-8 '>
       {/* DRAFT */}
       <div className='flex justify-around mt-6'>
           <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
