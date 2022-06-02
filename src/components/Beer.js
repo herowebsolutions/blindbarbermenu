@@ -18,7 +18,7 @@ export default function Beer ({ draft, canned }) {
         <div className='text-primary py-3'>
           {Object.keys(draft).map(head => (
             <div key={head} className='relative'>
-              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-64 lg:px-4 '>
+              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                     {head}
@@ -54,7 +54,7 @@ export default function Beer ({ draft, canned }) {
         <div className='text-primary py-3'>
           {Object.keys(canned).map(head => (
             <div key={head} className='relative'>
-              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-64 lg:px-4 '>
+              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                     {head}

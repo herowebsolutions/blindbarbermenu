@@ -16,12 +16,12 @@ export default function Other ({
         <div className='text-primary py-3 text-center'>
           {Object.keys(other).map(head => (
             <div key={head} className='relative'>
-              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-64 lg:px-4 '>
-                <div className='flex justify-around mt-6'>
+              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
+                <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                     Other Cold Drinks
                   </h1>
-                  <h1 className='pt-8 text-sm font-face-ko'>
+                  <h1 className='ml-3 pt-8 text-sm font-face-ko'>
                     $
                     <span className='pt-8 text-2xl font-semibold tracking-widest'>
                       5
@@ -53,10 +53,10 @@ export default function Other ({
         </div>
 
         {/* SNACKS */}
-        <div className='text-primary py-3'>
+        <div className='text-primary '>
           {Object.keys(snacks).map(head => (
             <div key={head} className='relative'>
-              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-64 lg:px-4 '>
+              <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                     {head}
@@ -67,7 +67,7 @@ export default function Other ({
               <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
                 {snacks[head].map(item => (
                   <li key={item.id}>
-                    <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500 '>
+                    <div className='relative px-6 lg:px-48 py-1 flex '>
                       <div className='flex-shrink-0'></div>
                       <div className='flex-1 min-w-0 '>
                         <span className='absolute inset-0' aria-hidden='true' />

@@ -186,10 +186,16 @@ export default function Cocktails ({
             {Object.keys(highballs).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 text-center '>
-                  <div className='flex justify-center mt-6'>
+                  <div className='flex justify-around mt-6'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
-                      <span className='ml-2 '> ハイボール </span>
+                      <span className=' '> ハイボール </span>
+                    </h1>
+                    <h1 className='pt-8 text-sm font-face-ko'>
+                      $
+                      <span className='pt-8 text-2xl font-semibold tracking-widest'>
+                        13
+                      </span>
                     </h1>
                   </div>
                   <div className='w-full border-t border-gray-300' />
@@ -205,7 +211,7 @@ export default function Cocktails ({
                             aria-hidden='true'
                           />
                           <h1 className='text-md uppercase font-semibold font-face-px tracking-widest'>
-                            {item.name} {item.price}
+                            {item.name} 
                           </h1>
                           <h3 className='text-md font-face-ga pb-4 tracking-wide'>
                             {item.ingredients}

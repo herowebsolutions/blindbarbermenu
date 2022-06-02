@@ -4,11 +4,11 @@ import React from 'react'
 export default function Spirits ({ spirits }) {
   return (
     <div
-      className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
+      className=' min-h-screen pb-20 font-dosis sm:border-0 sm:border-none  bg-gray-100'
       id='spirits'
     >
-      <div className=' max-w-7xl h-full mx-auto  sm:px-1 lg:px-8 '>
-        {/* TEQUILA */}
+      <div className=' max-w-7xl h-full mx-auto sm:px-1 lg:px-8 '>
+        {/* SPIRITS */}
 
         <div className='text-primary py-3'>
           {Object.keys(spirits).map(head => (
@@ -16,7 +16,7 @@ export default function Spirits ({ spirits }) {
               <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-                    Spirits (in Progress)
+                    Spirits 
                   </h1>
                 </div>
                 <div className='w-full border-t border-gray-300' />
@@ -26,7 +26,7 @@ export default function Spirits ({ spirits }) {
                 {spirits[head].map(item => (
                   <li key={item.id}>
                     <div className='flex justify-left '>
-                      <h1 className='px-6  lg:px-48 text-2xl uppercase font-face-ko tracking-widest'>
+                      <h1 className='px-6 lg:px-48 text-2xl uppercase font-face-ko tracking-widest'>
                         {item.title}
                       </h1>
                     </div>
@@ -39,7 +39,7 @@ export default function Spirits ({ spirits }) {
                         </h1>
 
                         <h3 className='text-md font-face-ga tracking-wide'>
-                          {item.vol} - {item.origin}
+                          {item.vol}  {item.origin}
                         </h3>
                       </div>
                     </div>

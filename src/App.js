@@ -64,7 +64,7 @@ function App () {
         id: 1,
         name: 'Rum Punch',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Bacardi 8, RumHaven, Creme de Banané, pineaple, lime, demerara`
+        ingredients: `Bacardi 8, RumHaven, Creme de Banané, pineapple, lime, demerara`
       },
 
       {
@@ -437,18 +437,145 @@ function App () {
     spirits: [
       {
         id: 1,
-        name: 'Bombino Blanco Valentina Passalacqua',
-        price: '$14/$62',
-        origin: 'Puglia, Italy',
-        vol: '11°',
-        title: 'Tequila'
+        name: 'Deep Eddy',
+        price: '$12',
+        vol: '',
+        title: 'Vodka'
       },
       {
         id: 2,
-        name: 'Pinot Gris Domaine Paul Blanck',
-        price: '$14/$62',
-        origin: 'Alsace, France',
-        vol: '13°'
+        name: 'Grey Goose',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 3,
+        name: 'Haku',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 4,
+        name: 'Ketel One',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 5,
+        name: 'Titos',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 6,
+        name: 'Amass',
+        price: '$14',
+        vol: '',
+        title: 'Gin'
+      },
+      {
+        id: 7,
+        name: 'Botanist',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 8,
+        name: 'Bombay',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 9,
+        name: 'Bombay Bramble',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 10,
+        name: 'Hendricks',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 11,
+        name: 'Roku',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 12,
+        name: 'Spring 44',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 13,
+        name: 'Tanqueray 10',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 14,
+        name: 'Bacardi White',
+        price: '$12',
+        vol: '',
+        title: 'Rum'
+      },
+      {
+        id: 15,
+        name: 'Bacardi 8',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 16,
+        name: 'Leblon',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 17,
+        name: 'Mount Gay Black Barrel',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 18,
+        name: 'Rhum JM Agricole',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 19,
+        name: 'Casamigos Blanco',
+        price: '$12',
+        vol: '',
+        title: 'Tequila'
+      },
+      {
+        id: 20,
+        name: 'Casamigos Reposado',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 21,
+        name: 'Casamigos Añejo',
+        price: '$18',
+        vol: ''
+      },
+      {
+        id: 22,
+        name: 'Casa Dragones',
+        price: '$19',
+        vol: ''
+      },
+      {
+        id: 23,
+        name: 'Cincoro Blanco',
+        price: '$25',
+        vol: ''
       },
     ]
   }
