@@ -7,7 +7,7 @@ import Wine from './components/Wine'
 import Beer from './components/Beer'
 import Other from './components/Other'
 import Spirits from './components/Spirits'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import Home from './components/Home'
 import HappyHour from './components/HappyHour'
 
@@ -346,10 +346,10 @@ function App () {
       },
       {
         id: 7,
-        name: 'Virtue Brut Cider',
-        price: '$7',
-        desc: 'Farmnhouse Cider',
-        vol: '6.7°'
+        name: 'Aval Rose Cider',
+        price: '$10',
+        desc: 'Rose Cider',
+        vol: '6.0°'
       },
       {
         id: 8,
@@ -374,6 +374,20 @@ function App () {
       },
       {
         id: 11,
+        name: 'Amass Seltzer',
+        price: '$12',
+        desc: 'Hard Seltzer',
+        vol: '5.0°'
+      },
+      {
+        id: 12,
+        name: 'Coastal Spritz',
+        price: '$10',
+        desc: 'Wine Spritzer',
+        vol: '5.0°'
+      },
+      {
+        id: 13,
         name: 'Athletic Brewing Upside Dawn',
         price: '$8',
         desc: 'Non-Alcoholic Golden Style Ale',
@@ -413,23 +427,24 @@ function App () {
     snacks: [
       {
         id: 1,
-        name: 'Olive You',
+        name: 'Chicken Tenders',
+        desc: '5 Tenders',
         ingredients:
-          'Castelvetrano, Bella di Cerignola, Gaeta, Italian olive oil',
-        price: '7'
+          'Blind Buffalo sauce, ranch, ketchup',
+        price: '$15'
       },
       {
         id: 2,
         name: 'Crab Rangoon',
         desc: '5 Pieces',
         ingredients: 'Everything seasoning, Thai sweet chili',
-        price: '9'
+        price: '$9'
       },
       {
         id: 3,
         name: 'Fries',
         ingredients: 'House-cut Kennebec potato, sea salt',
-        price: '8'
+        price: '$8'
       }
     ]
   }
@@ -612,7 +627,7 @@ function App () {
           />
           <Route path='*' element={<Home />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   )
