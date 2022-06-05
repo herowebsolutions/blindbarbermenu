@@ -368,7 +368,7 @@ function App () {
       {
         id: 10,
         name: 'High Noon',
-        price: '$9',
+        price: '$11',
         desc: 'Hard Seltzer',
         vol: '4.5°'
       },
