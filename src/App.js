@@ -148,7 +148,7 @@ function App () {
       },
       {
         id: 3,
-        name: 'Hot Pink SZN',
+        name: 'Bright Light',
         desc: 'frat boy highball',
         ingredients:
           'Haku Vodka, Aperol, lime, Watermelon Red Bull, Topo Chico',
