@@ -12,7 +12,7 @@ export default function Beer ({ draft, canned }) {
       {/* DRAFT */}
       <div className='flex justify-around mt-6'>
           <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-            Beers And More
+            Beers, Etc.
           </h1>
         </div>
         <div className='text-primary py-3'>

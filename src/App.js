@@ -7,9 +7,11 @@ import Wine from './components/Wine'
 import Beer from './components/Beer'
 import Other from './components/Other'
 import Spirits from './components/Spirits'
-// import Footer from './components/Footer'
+import Bottles from './components/Bottles'
 import Home from './components/Home'
 import HappyHour from './components/HappyHour'
+import Footer from './components/Footer'
+import BottlesNav from './components/BottlesNav'
 
 function App () {
   const signature = {
@@ -176,7 +178,7 @@ function App () {
       },
       {
         id: 2,
-        name: 'Pinot Gris Domaine Paul Blanck',
+        name: 'Pinot Blanc Domaine Paul Blanck',
         price: '$14/$62',
         origin: 'Alsace, France',
         vol: '13°'
@@ -198,7 +200,7 @@ function App () {
       }
     ]
   }
- 
+
   const rose = {
     rosé: [
       {
@@ -221,17 +223,25 @@ function App () {
       },
       {
         id: 2,
+        name: 'Campa Viejo Cava',
+        price: '$14/$62',
+        origin: 'Logrono, Spain',
+        vol: '11.5°'
+      },
+      {
+        id: 3,
         name: 'Chandon Garden Spritz Split',
         price: '$13',
         origin: 'Mendoza, Argentina',
         vol: '11°'
       },
       {
-        id: 3,
-        name: 'Campa Viejo Cava',
-        price: '$14/$62',
-        origin: 'Logrono, Spain',
-        vol: '11.5°'
+        id: 4,
+        name: 'Coastal Spritz',
+        price: '$10',
+        origin: 'Washington, USA',
+        desc: 'Pineapple Rosé Spritzer',
+        vol: '5°'
       }
     ]
   }
@@ -246,7 +256,7 @@ function App () {
       },
       {
         id: 2,
-        name: 'Veuve Clicquot Viejo Cava',
+        name: 'Veuve Clicquot Brut',
         price: '$200',
         origin: 'Champagne, France',
         vol: '12°'
@@ -283,7 +293,7 @@ function App () {
         desc: 'Lager',
         vol: '4.7°'
       },
-      
+
       {
         id: 3,
         name: 'Goose Island Neon Beer Hug',
@@ -297,7 +307,7 @@ function App () {
         price: '$9',
         desc: 'Citra Pale Ale',
         vol: '5.5°'
-      },
+      }
     ]
   }
   const canned = {
@@ -314,7 +324,7 @@ function App () {
         name: 'Budweiser',
         price: '$6',
         desc: 'American Pale Lager',
-        vol: '5.0°'
+        vol: '5°'
       },
       {
         id: 3,
@@ -339,31 +349,31 @@ function App () {
       },
       {
         id: 6,
-        name: 'Golden Road',
+        name: '86 Golden Road',
         price: '$7',
         desc: 'Mango Wheat Ale',
-        vol: '5.0°'
+        vol: '5°'
       },
       {
         id: 7,
         name: 'Aval Rose Cider',
         price: '$10',
         desc: 'Rose Cider',
-        vol: '6.0°'
+        vol: '6°'
       },
       {
         id: 8,
         name: 'Luna Bay Palo Santo Blueberry',
         price: '$7',
         desc: 'Hard Kombucha',
-        vol: '6.0°'
+        vol: '6°'
       },
       {
         id: 9,
         name: 'Luna Bay Raspberry Rose',
         price: '$7',
         desc: 'Hard Kombucha',
-        vol: '6.0°'
+        vol: '6°'
       },
       {
         id: 10,
@@ -377,17 +387,11 @@ function App () {
         name: 'Amass Seltzer',
         price: '$12',
         desc: 'Hard Seltzer',
-        vol: '5.0°'
+        vol: '5°'
       },
+
       {
         id: 12,
-        name: 'Coastal Spritz',
-        price: '$10',
-        desc: 'Wine Spritzer',
-        vol: '5.0°'
-      },
-      {
-        id: 13,
         name: 'Athletic Brewing Upside Dawn',
         price: '$8',
         desc: 'Non-Alcoholic Golden Style Ale',
@@ -429,8 +433,7 @@ function App () {
         id: 1,
         name: 'Chicken Tenders',
         desc: '5 Tenders',
-        ingredients:
-          'Blind Buffalo sauce, ranch, ketchup',
+        ingredients: 'Blind Buffalo sauce, ranch, ketchup',
         price: '$15'
       },
       {
@@ -591,7 +594,224 @@ function App () {
         name: 'Cincoro Blanco',
         price: '$25',
         vol: ''
+      }
+    ]
+  }
+  const bottles = {
+    bottles: [
+      {
+        id: 1,
+        name: `Tito's`,
+        price: '$375',
+        type: 'Vodka'
       },
+      {
+        id: 2,
+        name: `Grey Goose`,
+        price: '$425',
+        type: 'Vodka'
+      },
+      {
+        id: 3,
+        name: `Kettle One Vodka`,
+        price: '$400',
+        type: 'Vodka'
+      },
+      {
+        id: 4,
+        name: `Don Julio 1942`,
+        price: '$850',
+        type: 'Tequila'
+      },
+      {
+        id: 5,
+        name: `Casamigos Blanco`,
+        price: '$450',
+        type: 'Tequila'
+      },
+      {
+        id: 6,
+        name: `Casamigos Reposado`,
+        price: '$475',
+        type: 'Tequila'
+      },
+      {
+        id: 7,
+        name: `Casamigos Añejo`,
+        price: '$500',
+        type: 'Tequila'
+      },
+      {
+        id: 8,
+        name: `Patrón Silver`,
+        price: '$475',
+        type: 'Tequila'
+      },
+
+      {
+        id: 9,
+        name: `La Luna`,
+        price: '$400',
+        type: 'Mezcal'
+      },
+      {
+        id: 10,
+        name: `The Botanist`,
+        price: '$375',
+        type: 'Islay Dry Gin'
+      },
+      {
+        id: 11,
+        name: `Hendrick's`,
+        price: '$425',
+        type: 'Gin'
+      },
+      {
+        id: 12,
+        name: `D'ussé`,
+        price: '$450',
+        type: 'Cognac'
+      },
+      {
+        id: 13,
+        name: `Hennessy`,
+        price: '$450',
+        type: 'Cognac'
+      },
+      {
+        id: 14,
+        name: `Johnnie Walker Black`,
+        price: '$450',
+        type: 'Scotch'
+      },
+      {
+        id: 15,
+        name: `Jameson`,
+        price: '$425',
+        type: 'Irish Whiskey'
+      },
+      {
+        id: 16,
+        name: `Maker's Mark`,
+        price: '$425',
+        type: 'Kentucky straight Bourbon'
+      },
+      {
+        id: 17,
+        name: `Knob Creek`,
+        price: '$475',
+        type: 'Kentucky straight Bourbon'
+      },
+      {
+        id: 18,
+        name: `Suntory Toki`,
+        price: '$550',
+        type: 'Japanese Whiskey'
+      }
+    ]
+  }
+  const champagnes = {
+    champagne: [
+      {
+        id: 1,
+        name: 'Veuve Clicquot',
+        price: '$200',
+        type: 'Brut',
+        origin: 'France'
+      },
+      {
+        id: 2,
+        name: 'Veuve Clicquot Rosé',
+        price: '$225',
+        type: 'Sparkling Cuvée',
+        origin: 'France'
+      },
+      {
+        id: 3,
+        name: 'Perrier Jouët Belle Epoque',
+        price: '$350',
+        type: 'Brut',
+        origin: 'France'
+      },
+      {
+        id: 4,
+        name: 'Dom Pérignon',
+        price: '$450',
+        type: 'Brut',
+        origin: 'France'
+      }
+    ]
+  }
+  const extras = {
+    extras: [
+      {
+        id: 1,
+        name: 'Red Bull',
+        price: '$25',
+        type: '4-pack'
+      },
+      {
+        id: 2,
+        name: 'Liquid Death',
+        price: '$20',
+        type: '5-pack'
+      }
+    ]
+  }
+  const accompaniments = {
+    accompaniments: [
+      {
+        id: 1,
+        name: 'Q-Soda'
+      },
+      {
+        id: 2,
+        name: 'Q-Tonic'
+      },
+      {
+        id: 3,
+        name: 'Q-Kola'
+      },
+      {
+        id: 4,
+        name: 'Q-Gingerbeer'
+      },
+      {
+        id: 5,
+        name: 'Q-Grapefruit Soda'
+      },
+      {
+        id: 6,
+        name: 'Q-Margarita Mix',
+        upcharge: '+10'
+      },
+      {
+        id: 7,
+        name: 'Sprite'
+      },
+      {
+        id: 8,
+        name: 'Gingerale'
+      },
+      {
+        id: 9,
+        name: 'Cranberry'
+      },
+      {
+        id: 10,
+        name: 'Cold-Pressed Pineapple',
+        upcharge: '+10'
+      },
+      {
+        id: 11,
+        name: 'Cold-Pressed Lemon Juice',
+        upcharge: '+10'
+      },
+      {
+        id: 12,
+        name: 'Cold-Pressed Lime Juice',
+        upcharge: '+10'
+      }
     ]
   }
   return (
@@ -599,9 +819,24 @@ function App () {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/chicago-happy-hour' element={<HappyHour />} />
           <Route
-            path='/chicago-menu'
+            path='/bottles'
+            element={
+              <>
+              <BottlesNav/>
+                <Bottles
+                  bottles={bottles}
+                  champagnes={champagnes}
+                  extras={extras}
+                  accompaniments={accompaniments}
+                />
+                 <Footer />
+              </>
+            }
+          />
+          <Route path='/happy-hour' element={<HappyHour />} />
+          <Route
+            path='/full-menu'
             element={
               <>
                 <Navigation />
@@ -621,13 +856,13 @@ function App () {
                 <Beer draft={draft} canned={canned} />
                 <Other other={other} snacks={snacks} />
                 <Spirits spirits={spirits} />
-
+                <Footer />
               </>
             }
           />
           <Route path='*' element={<Home />} />
         </Routes>
-        {/* <Footer /> */}
+       
       </Router>
     </>
   )

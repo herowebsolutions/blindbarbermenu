@@ -10,8 +10,8 @@ export default function Specialty () {
   return (
     <>
       <div
-        className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
-        id='specialty'
+        className=' min-h-screen sm:border-0 sm:border-none  bg-gray-100'
+        
       >
         <div className=' max-w-7xl h-full mx-auto py-6 sm:px-5 lg:px-8 '>
           <div className='w-64 mx-auto pt-32'>
@@ -28,24 +28,40 @@ export default function Specialty () {
           <div
             className={`${
               animated ? '' : 'translate-y-5 opacity-0'
-            } transform transition duration-1000 ease-in-out text-center pt-16`}
+            } transform transition duration-1000 ease-in-out text-center pt-16 font-face-ko tracking-widest`}
           >
-           
-              <Link
-                className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
-                
-                to='/chicago-menu'
-              >Chicago Menu</Link>
-           
+            <Link
+              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              to='/full-menu'
+            >
+              Full Menu
+            </Link>
           </div>
 
-          {/* <div className='text-center mt-10'>
-            <ScrollLink to='page2' smooth={true}>
-              <button className=' animate-bounce py-2 focus:outline-none '>
-                {content.header.btnText}
-              </button>
-            </ScrollLink>
-          </div> */}
+          <div
+            className={`${
+              animated ? '' : 'translate-y-5 opacity-0'
+            } transform transition duration-1000 ease-in-out text-center pt-4`}
+          >
+            <Link
+              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              to='/bottles'
+            >
+              Bottles
+            </Link>
+          </div>
+          <div
+            className={`${
+              animated ? '' : 'translate-y-5 opacity-0'
+            } transform transition duration-1000 ease-in-out text-center pt-4`}
+          >
+            <Link
+              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              to='/'
+            >
+              Happy Hour(Coming Soon)
+            </Link>
+          </div>
         </div>
       </div>
     </>
