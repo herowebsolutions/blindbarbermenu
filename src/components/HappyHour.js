@@ -48,7 +48,6 @@ export default function HappyHour ({
           <div
             className='text-primary py-3 text-center'
             data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-sine'
             data-aos-delay='300'
           >
             {Object.keys(highball).map(head => (
@@ -96,9 +95,7 @@ export default function HappyHour ({
           <div
             className='text-primary py-3 text-center'
             id='martinis'
-            data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-sine'
-            data-aos-delay='300'
+            
           >
             {Object.keys(martinis).map(head => (
               <div key={head} className='relative'>

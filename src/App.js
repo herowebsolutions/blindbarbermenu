@@ -348,43 +348,37 @@ function App () {
         desc: 'Golden Ale',
         vol: '4.4°'
       },
+      
       {
         id: 6,
-        name: '86 Golden Road',
-        price: '$7',
-        desc: 'Mango Wheat Ale',
-        vol: '5°'
-      },
-      {
-        id: 7,
         name: 'Aval Rose Cider',
         price: '$10',
         desc: 'Rose Cider',
         vol: '6°'
       },
       {
-        id: 8,
+        id: 7,
         name: 'Luna Bay Palo Santo Blueberry',
         price: '$7',
         desc: 'Hard Kombucha',
         vol: '6°'
       },
       {
-        id: 9,
+        id: 8,
         name: 'Luna Bay Raspberry Rose',
         price: '$7',
         desc: 'Hard Kombucha',
         vol: '6°'
       },
       {
-        id: 10,
+        id: 9,
         name: 'High Noon',
         price: '$11',
         desc: 'Hard Seltzer',
         vol: '4.5°'
       },
       {
-        id: 11,
+        id: 10,
         name: 'Amass Seltzer',
         price: '$12',
         desc: 'Hard Seltzer',
@@ -392,7 +386,7 @@ function App () {
       },
 
       {
-        id: 12,
+        id: 11,
         name: 'Athletic Brewing Upside Dawn',
         price: '$8',
         desc: 'Non-Alcoholic Golden Style Ale',
@@ -615,7 +609,7 @@ function App () {
       },
       {
         id: 3,
-        name: `Ketle One`,
+        name: `Ketel One`,
         price: '$400',
         type: 'Vodka'
       },
