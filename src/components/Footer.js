@@ -7,7 +7,7 @@ function Footer () {
     <div className='min-h-full bg-primary p-4 lg:px-64 flex flex-row justify-between items-center text-gray-300 font-medium text-sm text-center font-face-ko'>
       <div >
         
-        <a href='http://blindbarber.com' target='_blank' rel="noreferrer" className='uppercase font-face-ko tracking-widest'>blindbarber.com</a>
+        <a href='http://blindbarber.com' target='_blank' rel="noreferrer" className='uppercase font-face-ko tracking-widest text-gray-300'>blindbarber.com</a>
       </div>
       <div className=' w-8 '>
         <img

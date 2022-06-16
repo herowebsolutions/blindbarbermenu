@@ -4,7 +4,8 @@ const content = {
     favicon: process.env.PUBLIC_URL + '/assets/BBlogoCrop.png',
     faviconWhite: process.env.PUBLIC_URL + '/assets/BBlogowhitecrop.png',
     workLink: ['Cocktails', 'Wine', 'Beer', 'Zeros & Snacks', 'Spirits'],
-    bottlesLink: ['Bottles', 'Champagne', 'Extras']
+    bottlesLink: ['Bottles', 'Champagne', 'Extras'],
+    happyLink: ['Highballs', 'Martinis', 'More']
   },
   header: {
     img: process.env.PUBLIC_URL + '/assets/developer.png',

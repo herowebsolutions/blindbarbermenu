@@ -57,9 +57,9 @@ export default function Specialty () {
           >
             <Link
               className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
-              to='/'
+              to='/happy-hour'
             >
-              Happy Hour(Coming Soon)
+              Happy Hour
             </Link>
           </div>
         </div>

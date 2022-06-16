@@ -12,6 +12,7 @@ import Home from './components/Home'
 import HappyHour from './components/HappyHour'
 import Footer from './components/Footer'
 import BottlesNav from './components/BottlesNav'
+import HappyNav from './components/HappyNav'
 
 function App () {
   const signature = {
@@ -597,6 +598,7 @@ function App () {
       }
     ]
   }
+  // bottles
   const bottles = {
     bottles: [
       {
@@ -613,7 +615,7 @@ function App () {
       },
       {
         id: 3,
-        name: `Kettle One Vodka`,
+        name: `Ketle One`,
         price: '$400',
         type: 'Vodka'
       },
@@ -656,9 +658,9 @@ function App () {
       },
       {
         id: 10,
-        name: `The Botanist`,
+        name: `Bombay Sapphire`,
         price: '$375',
-        type: 'Islay Dry Gin'
+        type: 'Gin'
       },
       {
         id: 11,
@@ -675,7 +677,7 @@ function App () {
       {
         id: 13,
         name: `Hennessy`,
-        price: '$450',
+        price: '$475',
         type: 'Cognac'
       },
       {
@@ -814,6 +816,115 @@ function App () {
       }
     ]
   }
+  // happy hour
+  const highball = {
+    highballs: [
+      {
+        id: 1,
+        name: 'Paradise Ginza',
+        desc: 'frat boy highball',
+        ingredients: 'Suntory Toki + very fizzy soda water, lemon oil',
+        sub: ''
+      },
+      {
+        id: 2,
+        name: 'Frenchman Knob',
+        desc: 'frat boy highball',
+        ingredients: 'Jim Beam Black + very fizzy soda water'
+      },
+      {
+        id: 3,
+        name: 'San Marcos Ranch Water',
+        desc: 'frat boy highball',
+        ingredients:
+          'Hornitos Reposado, ancho pepper, hibiscus, lime + very fizzy soda water'
+      }
+    ]
+  }
+  const martinis = {
+    martinis: [
+      {
+        id: 1,
+        name: 'Espresso',
+        ingredients: 'Grey Goose Vodka, Mr.Black, Borghetti, Bueno Days Coffee'
+      },
+      {
+        id: 2,
+        name: 'Cosmopolitan',
+        ingredients: 'Grey Goose Vodka, Cointreau, cranberry, lime'
+      },
+      {
+        id: 3,
+        name: 'Dirty',
+        ingredients: 'Botanist Gin, dry vermouth, olive brine'
+      },
+      {
+        id: 4,
+        name: 'Vesper',
+        ingredients: 'Haku Vodka, Roku Gin, Cocchi Americano, lemon'
+      }
+    ]
+  }
+  const MORE = {
+    more: [
+      {
+        id: 1,
+        name: 'Luna Bay Palo Santo Blueberry',
+        desc: '6°',
+        type: `Hard Kombucha`,
+        price: '$5'
+      },
+      {
+        id: 2,
+        name: 'Luna Bay Raspberry Rose',
+        desc: '6°',
+        type: `Hard Kombucha`,
+        price: '$5'
+      },
+      {
+        id: 3,
+        name: `Moor's Brewing Co. Session Ale`,
+        desc: '5°',
+        type: 'Session Ale',
+        price: '$6'
+      },
+      {
+        id: 4,
+        name: `Moor's Brewing Co. IPA`,
+        desc: '6.7°',
+        type: 'IPA',
+        price: '$6'
+      },
+      {
+        id: 5,
+        name: `No Fine Print Lil Fizz Sparkling`,
+        desc: '12.5°',
+        type: 'Lake County, California',
+        price: '$7'
+      },
+      {
+        id: 6,
+        name: `No Fine Print Cabernet Sauvignon`,
+        desc: '14.5°',
+        type: 'Lake County, California',
+        price: '$7'
+      },
+      {
+        id: 7,
+        name: `Amass Faerie Fizz`,
+        desc: '5°',
+        type: 'Hard Seltzer',
+        price: '$8'
+      },
+      {
+        id: 8,
+        name: `Chandon Garden Spritz`,
+        desc: '11°',
+        type: 'Wine Spritzer',
+        price: '$8'
+      }
+    ]
+  }
   return (
     <>
       <Router>
@@ -823,18 +934,31 @@ function App () {
             path='/bottles'
             element={
               <>
-              <BottlesNav/>
+                <BottlesNav />
                 <Bottles
                   bottles={bottles}
                   champagnes={champagnes}
                   extras={extras}
                   accompaniments={accompaniments}
                 />
-                 <Footer />
+                <Footer />
               </>
             }
           />
-          <Route path='/happy-hour' element={<HappyHour />} />
+          <Route
+            path='/happy-hour'
+            element={
+              <>
+                <HappyNav />
+                <HappyHour
+                  highball={highball}
+                  martinis={martinis}
+                  more={MORE}
+                />
+                <Footer />
+              </>
+            }
+          />
           <Route
             path='/full-menu'
             element={
@@ -862,7 +986,6 @@ function App () {
           />
           <Route path='*' element={<Home />} />
         </Routes>
-       
       </Router>
     </>
   )

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-// import { Link as ScrollLink } from 'react-scroll'
 import content from './content'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
