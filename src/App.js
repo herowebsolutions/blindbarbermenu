@@ -589,7 +589,337 @@ function App () {
         name: 'Cincoro Blanco',
         price: '$25',
         vol: ''
-      }
+      },
+      {
+        id: 24,
+        name: 'Cincoro Reposado',
+        price: '$27',
+        vol: ''
+      },
+      {
+        id: 25,
+        name: 'Cincoro Añejo',
+        price: '$29',
+        vol: ''
+      },
+      {
+        id: 26,
+        name: 'Clase Azul Reposado',
+        price: '$35',
+        vol: ''
+      },
+      {
+        id: 27,
+        name: 'Clase Azul Plata',
+        price: '$26',
+        vol: ''
+      },
+      {
+        id: 28,
+        name: 'Clase Azul Gold',
+        price: '$78',
+        vol: ''
+      },
+      {
+        id: 29,
+        name: 'Clase Azul Añejo',
+        price: '$120',
+        vol: ''
+      },
+      {
+        id: 30,
+        name: 'Don Julio Blanco',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 31,
+        name: 'Don Julio Reposado',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 32,
+        name: 'Don Julio Añejo',
+        price: '$17',
+        vol: ''
+      },
+      {
+        id: 33,
+        name: 'Don Julio Crystal',
+        price: '$21',
+        vol: ''
+      },
+      {
+        id: 34,
+        name: 'Don Julio Primavera',
+        price: '$33',
+        vol: ''
+      },
+      {
+        id: 35,
+        name: 'Don Julio 1942',
+        price: '$35',
+        vol: ''
+      },
+      {
+        id: 36,
+        name: 'Don Julio Ultima Reserva',
+        price: '$115',
+        vol: ''
+      },
+      {
+        id: 37,
+        name: 'Fortaleza Blanco',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 38,
+        name: 'Fortaleza Reposado',
+        price: '$19',
+        vol: ''
+      },
+      {
+        id: 39,
+        name: 'Fortaleza Añejo',
+        price: '$23',
+        vol: ''
+      },
+      {
+        id: 40,
+        name: 'Hornitos Reposado',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 41,
+        name: 'Jon Basil Blanco',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 42,
+        name: 'Jon Basil Reposado',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 43,
+        name: 'Lunazul',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 44,
+        name: 'Patrón Silver',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 45,
+        name: 'Patrón Reposado',
+        price: '$17',
+        vol: ''
+      },
+      {
+        id: 46,
+        name: 'Patrón Añejo',
+        price: '$18',
+        vol: ''
+      },
+      {
+        id: 47,
+        name: 'Patrón Sherry Cask Aged Extra Añejo',
+        price: '$22',
+        vol: ''
+      },
+      {
+        id: 48,
+        name: 'Tres Generaciones Reposado',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 49,
+        name: 'Amaras Cupreata',
+        price: '$16',
+        vol: '',
+        title: 'Mezcal'
+      },
+      {
+        id: 50,
+        name: 'Bahnez',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 51,
+        name: 'Fidencio',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 52,
+        name: 'La Luna Cupreata',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 53,
+        name: 'Del Maguey Vida',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 54,
+        name: 'George Dickel',
+        price: '$14',
+        vol: '',
+        title: 'Rye'
+      },
+      {
+        id: 55,
+        name: 'High West Double',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 56,
+        name: 'Jack Daniels',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 57,
+        name: 'Michters',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 58,
+        name: 'Old Overholt',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 59,
+        name: 'Angels Envy',
+        price: '$18',
+        vol: '',
+        title: 'Bourbon'
+      },
+      {
+        id: 60,
+        name: 'Buffalo Trace',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 61,
+        name: 'Jack Daniels',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 62,
+        name: 'Jim Beam Black (1L)',
+        price: '$13',
+        vol: ''
+      },
+      {
+        id: 63,
+        name: 'Knob Creek (1L)',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 64,
+        name: `Maker's Mark (1L)`,
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 65,
+        name: 'Old Grand Dad (80 Proof)',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 66,
+        name: 'Dewars White Label',
+        price: '$13',
+        vol: '',
+        title: 'Scotch'
+      },
+      {
+        id: 67,
+        name: 'Dewars Japanese Smooth',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 68,
+        name: 'Glenlivet 12 Year',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 69,
+        name: 'Johnnie Walker Black',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 70,
+        name: 'Johnnie Walker High Rye',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 71,
+        name: 'Jameson',
+        price: '$12',
+        vol: '',
+        title: 'Whiskey'
+      },
+      {
+        id: 72,
+        name: 'Roe & Co',
+        price: '$12',
+        vol: ''
+      },
+      {
+        id: 73,
+        name: 'Suntory Toki',
+        price: '$14',
+        vol: ''
+      },
+      {
+        id: 74,
+        name: 'Westward Single Malt Whiskey',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 75,
+        name: `D'usse`,
+        price: '$16',
+        vol: '',
+        title: 'Cognac'
+      },
+      {
+        id: 76,
+        name: 'Hennessey VS',
+        price: '$15',
+        vol: ''
+      },
+      {
+        id: 77,
+        name: 'Remy Martin 1738',
+        price: '$19',
+        vol: ''
+      },
     ]
   }
   // bottles
@@ -945,9 +1275,9 @@ function App () {
               <>
                 <HappyNav />
                 <HappyHour
-                  highball={highball}
-                  martinis={martinis}
-                  more={MORE}
+                highball={highball}
+                martinis={martinis}
+                more={MORE}
                 />
                 <Footer />
               </>
