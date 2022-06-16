@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import content from './content'
 import { Link as ScrollLink } from 'react-scroll'
 
-export default function Navigation () {
+export default function BottlesNav () {
   const [animated, setAnimated] = useState(false)
   useEffect(() => {
     setAnimated(true)

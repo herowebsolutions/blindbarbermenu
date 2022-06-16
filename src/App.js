@@ -348,7 +348,7 @@ function App () {
         desc: 'Golden Ale',
         vol: '4.4°'
       },
-      
+
       {
         id: 6,
         name: 'Aval Rose Cider',
@@ -919,7 +919,7 @@ function App () {
         name: 'Remy Martin 1738',
         price: '$19',
         vol: ''
-      },
+      }
     ]
   }
   // bottles
@@ -1275,9 +1275,9 @@ function App () {
               <>
                 <HappyNav />
                 <HappyHour
-                highball={highball}
-                martinis={martinis}
-                more={MORE}
+                  highball={highball}
+                  martinis={martinis}
+                  more={MORE}
                 />
                 <Footer />
               </>

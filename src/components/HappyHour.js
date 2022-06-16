@@ -56,7 +56,7 @@ export default function HappyHour ({
                   <div className='flex justify-around mt-6'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
-                      <span className=' '> {head.sub} </span>
+                      
                     </h1>
                     <h1 className='pt-8 text-sm font-face-ko'>
                       $
