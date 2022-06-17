@@ -60,7 +60,7 @@ export default function Bottles ({
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {bottles[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -95,7 +95,7 @@ id='champagne'>
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {champagnes[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -130,7 +130,7 @@ id='extras'>
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {extras[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 lg:px-48 py-1 flex hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -165,7 +165,7 @@ id='extras'>
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {accompaniments[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>

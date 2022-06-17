@@ -22,7 +22,7 @@ export default function Spirits ({ spirits }) {
                 <div className='w-full border-t border-gray-300' />
               </div>
 
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {spirits[head].map(item => (
                   <li key={item.id}>
                     <div className='flex justify-left '>

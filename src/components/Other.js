@@ -30,7 +30,7 @@ export default function Other ({
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {other[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -64,7 +64,7 @@ export default function Other ({
                 </div>
                 <div className='w-full border-t border-gray-300' />
               </div>
-              <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+              <ul className='relative z-0 pt-6'>
                 {snacks[head].map(item => (
                   <li key={item.id}>
                     <div className='relative px-6 lg:px-48 py-1 flex '>

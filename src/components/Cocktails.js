@@ -68,7 +68,7 @@ export default function Cocktails ({
                   <div className='w-full border-t border-gray-300' />
                 </div>
 
-                <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+                <ul className='relative z-0 pt-6'>
                   {signature[head].map(item => (
                     <li key={item.id}>
                       <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -112,7 +112,7 @@ export default function Cocktails ({
                   </div>
                   <div className='w-full border-t border-gray-300' />
                 </div>
-                <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+                <ul className='relative z-0 pt-6'>
                   {classic[head].map(item => (
                     <li key={item.id}>
                       <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -155,7 +155,7 @@ export default function Cocktails ({
                   </div>
                   <div className='w-full border-t border-gray-300' />
                 </div>
-                <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+                <ul className='relative z-0 pt-6'>
                   {fancy[head].map(item => (
                     <li key={item.id}>
                       <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -200,7 +200,7 @@ export default function Cocktails ({
                   </div>
                   <div className='w-full border-t border-gray-300' />
                 </div>
-                <ul className='relative z-0 divide-y divide-gray-200 pt-2 '>
+                <ul className='relative z-0 pt-2 '>
                   {highballs[head].map(item => (
                     <li key={item.id}>
                       <div className='relative px-6 py-1 flex items-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
@@ -238,7 +238,7 @@ export default function Cocktails ({
                   </div>
                   <div className='w-full border-t border-gray-300' />
                 </div>
-                <ul className='relative z-0 divide-y divide-gray-200 pt-6'>
+                <ul className='relative z-0 pt-6'>
                   {nightCaps[head].map(item => (
                     <li key={item.id}>
                       <div className='relative px-6 lg:px-48 py-1 flex  hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-pink-500'>
