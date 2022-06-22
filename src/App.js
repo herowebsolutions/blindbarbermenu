@@ -151,7 +151,7 @@ function App () {
       },
       {
         id: 3,
-        name: 'Bright Light',
+        name: 'Bright Lights',
         desc: 'frat boy highball',
         ingredients:
           'Haku Vodka, Aperol, lime, Watermelon Red Bull, Topo Chico',
@@ -1162,7 +1162,15 @@ function App () {
         desc: 'frat boy highball',
         ingredients:
           'Hornitos Reposado, ancho pepper, hibiscus, lime + very fizzy soda water'
-      }
+      },
+      {
+        id: 4,
+        name: 'Bright Lights',
+        desc: 'frat boy highball',
+        ingredients:
+          'Haku Vodka, Aperol, lime, Watermelon Red Bull, Topo Chico'
+        
+      },
     ]
   }
   const martinis = {
