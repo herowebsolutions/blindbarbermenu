@@ -45,7 +45,7 @@ function App () {
         id: 5,
         name: 'Batman',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Bombay Sapphire, Italicious Rosolio, Pineau de Charentes, lemon, absinthe, cava`
+        ingredients: `Hendrick's, Italicus Rosolio, Pineau de Charentes, lemon, cava, absinthe `
       },
       {
         id: 6,
@@ -78,9 +78,15 @@ function App () {
       },
       {
         id: 3,
-        name: 'Dirty Martini',
+        name: 'Gin Martini',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Botanist Gin, dry vermouth, olive brine`
+        ingredients: `Bombay Sapphire & dry vermouth, dirty or with a lemon twist`
+      },
+      {
+        id: 4,
+        name: 'Penicillin',
+        desc: 'ripe strawberry with a punch',
+        ingredients: `Monkey Shoulder Scotch, ginger, honey, lemon`
       }
     ]
   }
@@ -387,9 +393,9 @@ function App () {
 
       {
         id: 11,
-        name: 'Athletic Brewing Upside Dawn',
+        name: 'Visitor Lager',
         price: '$8',
-        desc: 'Non-Alcoholic Golden Style Ale',
+        desc: 'Gluten-Reduced, non-alcoholic beer',
         vol: '0.5°'
       }
     ]
