@@ -1,6 +1,7 @@
 const content = {
   nav: {
     logo: process.env.PUBLIC_URL + '/assets/BBlogo.png',
+    logoWhite: process.env.PUBLIC_URL + '/assets/BBlogowhite.png',
     favicon: process.env.PUBLIC_URL + '/assets/BBlogoCrop.png',
     faviconWhite: process.env.PUBLIC_URL + '/assets/BBlogowhitecrop.png',
     workLink: ['Cocktails', 'Wine', 'Beer', 'Zeros & Snacks', 'Spirits'],

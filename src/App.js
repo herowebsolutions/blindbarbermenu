@@ -349,10 +349,10 @@ function App () {
       },
       {
         id: 5,
-        name: 'Kona Big Wave',
+        name: 'Spiteful Alley Time',
         price: '$7',
-        desc: 'Golden Ale',
-        vol: '4.4°'
+        desc: 'Pale Ale',
+        vol: '6°'
       },
 
       {
