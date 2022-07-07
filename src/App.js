@@ -175,31 +175,17 @@ function App () {
   }
   const wine = {
     wine: [
+      
       {
         id: 1,
-        name: 'Bombino Blanco Valentina Passalacqua',
-        price: '$14/$62',
-        origin: 'Puglia, Italy',
-        vol: '11°',
-        title: 'white'
-      },
-      {
-        id: 2,
         name: 'Pinot Blanc Domaine Paul Blanck',
         price: '$14/$62',
         origin: 'Alsace, France',
         vol: '13°'
       },
+     
       {
-        id: 3,
-        name: 'Pipeńo Cacique Maravilla',
-        price: '$14/$62',
-        origin: 'Bio Bio Valley, Chile',
-        vol: '12.5°',
-        title: 'red'
-      },
-      {
-        id: 4,
+        id: 2,
         name: 'No Fine Print',
         price: '$12/$54',
         origin: 'Lake County, CA',
@@ -390,9 +376,15 @@ function App () {
         desc: 'Hard Seltzer',
         vol: '5°'
       },
-
       {
         id: 11,
+        name: 'System Seltzer Mango',
+        price: '$10',
+        desc: 'Hard Seltzer',
+        vol: '5°'
+      },
+      {
+        id: 12,
         name: 'Visitor Lager',
         price: '$8',
         desc: 'Gluten-Reduced, non-alcoholic beer',

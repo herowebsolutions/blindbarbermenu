@@ -31,7 +31,7 @@ export default function Specialty () {
             } transform transition duration-1000 ease-in-out text-center pt-16 font-face-ko tracking-widest`}
           >
             <Link
-              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base  font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
               to='/full-menu'
             >
               Full Menu
@@ -44,7 +44,7 @@ export default function Specialty () {
             } transform transition duration-1000 ease-in-out text-center pt-4`}
           >
             <Link
-              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base  font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
               to='/bottles'
             >
               Bottles
@@ -56,7 +56,7 @@ export default function Specialty () {
             } transform transition duration-1000 ease-in-out text-center pt-4`}
           >
             <Link
-              className=' inline-flex items-center bg-tertiary px-5 py-3 border border-secondary shadow-sm text-base font-bold font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
+              className=' inline-flex items-center bg-tertiary px-4 py-2 border border-secondary shadow-sm text-base  font-face-ko tracking-widest rounded-md text-secondary hover:shadow-lg focus:outline-none uppercase'
               to='/happy-hour'
             >
               Happy Hour
