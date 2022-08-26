@@ -190,7 +190,28 @@ function App () {
         price: '$12/$54',
         origin: 'Lake County, CA',
         vol: '14.5°'
-      }
+      },
+      {
+        id: 3,
+        name: `Les Tetes 2019 'Tete Red' Vin de France (Touraine)`,
+        price: '$15/$55',
+        origin: 'Loire, France',
+        vol: '13.5°'
+      },
+      {
+        id: 4,
+        name: `Las Jarras Wines 2021 'Superbloom' Carbonic Pink Zero (Madera Foothills)`,
+        price: '$20/$75',
+        origin: 'Central Valley, CA',
+        vol: '10.5°'
+      },
+      {
+        id: 5,
+        name: `Lammidia 2020 'Miscela' Bianco, Abruzzo`,
+        price: '$17/$65',
+        origin: 'Abruzzo, Italy',
+        vol: '13.5°'
+      },
     ]
   }
 
@@ -307,34 +328,41 @@ function App () {
     canned: [
       {
         id: 1,
+        name: 'Peroni',
+        price: '$9',
+        desc: 'Italian Lager',
+        vol: '5.1°'
+      },
+      {
+        id: 2,
         name: 'Bud Light',
         price: '$6',
         desc: 'Light Lager',
         vol: '4.2°'
       },
       {
-        id: 2,
+        id: 3,
         name: 'Budweiser',
         price: '$6',
         desc: 'American Pale Lager',
         vol: '5°'
       },
       {
-        id: 3,
+        id: 4,
         name: 'Estrella Jalisco',
         price: '$8',
         desc: 'Mexican Lager',
         vol: '4.5°'
       },
       {
-        id: 4,
+        id: 5,
         name: 'Spiteful IPA',
         price: '$8',
         desc: 'IPA',
         vol: '6.2°'
       },
       {
-        id: 5,
+        id: 6,
         name: 'Spiteful Alley Time',
         price: '$7',
         desc: 'Pale Ale',
@@ -342,49 +370,56 @@ function App () {
       },
 
       {
-        id: 6,
+        id: 7,
         name: 'Aval Rose Cider',
         price: '$10',
         desc: 'Rose Cider',
         vol: '6°'
       },
       {
-        id: 7,
+        id: 8,
         name: 'Luna Bay Palo Santo Blueberry',
         price: '$7',
         desc: 'Hard Kombucha',
         vol: '6°'
       },
       {
-        id: 8,
+        id: 9,
         name: 'Luna Bay Raspberry Rose',
         price: '$7',
         desc: 'Hard Kombucha',
         vol: '6°'
       },
       {
-        id: 9,
+        id: 10,
         name: 'High Noon',
         price: '$11',
         desc: 'Hard Seltzer',
         vol: '4.5°'
       },
       {
-        id: 10,
+        id: 11,
         name: 'Amass Seltzer',
         price: '$12',
         desc: 'Hard Seltzer',
         vol: '5°'
       },
       {
-        id: 11,
+        id: 12,
         name: 'System Seltzer Mango',
         price: '$10',
         desc: 'Hard Seltzer',
         vol: '5°'
       },
       {
-        id: 12,
+        id: 13,
+        name: 'SKRT',
+        price: '$10',
+        desc: 'Hard Seltzer',
+        vol: '5°'
+      },
+      {
+        id: 14,
         name: 'Visitor Lager',
         price: '$8',
         desc: 'Gluten-Reduced, non-alcoholic beer',
@@ -410,7 +445,7 @@ function App () {
         id: 3,
         name: 'Spring Water',
         price: '$5',
-        desc: 'Liquid Death Still | Liquid Death Sparkling'
+        desc: 'Acqua Panna Still | Perrier Sparkling'
       },
       {
         id: 4,
@@ -920,6 +955,46 @@ function App () {
       }
     ]
   }
+  const top = {
+    top: [
+      {
+        id: 1,
+        name: 'Old rip van winkle 10 year',
+        price: '$100'
+      },
+      {
+        id: 2,
+        name: 'Van winkle 12 year',
+        price: '$150'
+      },
+      {
+        id: 3,
+        name: 'Pappy van winkle 15 year',
+        price: '$250'
+      },
+      {
+        id: 4,
+        name: 'Thomas Handy Sazerac',
+        price: '$125'
+      },
+      {
+        id: 5,
+        name: 'Clasa Azul Gold',
+        price: '$78'
+      },
+      {
+        id: 6,
+        name: 'Clasa Azul Añejo',
+        price: '$120'
+      },
+      {
+        id: 7,
+        name: 'Don Julio 1942 Ultima Reserva',
+        price: '$115'
+      },
+
+    ]
+  }
   // bottles
   const bottles = {
     bottles: [
@@ -1255,6 +1330,7 @@ function App () {
       }
     ]
   }
+  
   return (
     <>
       <Router>
@@ -1309,7 +1385,7 @@ function App () {
                 />
                 <Beer draft={draft} canned={canned} />
                 <Other other={other} snacks={snacks} />
-                <Spirits spirits={spirits} />
+                <Spirits spirits={spirits} top={top} />
                 <Footer />
               </>
             }
