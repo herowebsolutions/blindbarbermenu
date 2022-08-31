@@ -10,7 +10,7 @@ export default function Specialty () {
   return (
     <>
       <div
-        className=' min-h-screen sm:border-0 sm:border-none  bg-gray-100'
+        className=' min-h-screen sm:border-0 sm:border-none  bg-gray-900'
         
       >
         <div className='max-w-7xl mx-auto '>
@@ -35,7 +35,7 @@ export default function Specialty () {
             }  transform transition duration-1000 ease-in-out text-center font-face-ko tracking-widest`}
           >
             <Link
-              className='bg-secondary px-5 py-3 border border-tertiary shadow-sm text-base font-face-ko tracking-widest text-tertiary  focus:outline-none uppercase'
+              className='bg-secondary px-5 py-3 border border-gray-600  shadow-sm text-base font-face-ko tracking-widest text-tertiary  focus:outline-none uppercase'
               to='/full-menu'
             >
               Full Menu
@@ -48,7 +48,7 @@ export default function Specialty () {
             } transform transition duration-1000 ease-in-out text-center`}
           >
             <Link
-              className='bg-secondary px-5 py-3 border border-tertiary shadow-sm font-face-ko tracking-widest text-tertiary  focus:outline-none uppercase'
+              className='bg-secondary px-5 py-3 border border-gray-600 shadow-sm font-face-ko tracking-widest text-tertiary  focus:outline-none uppercase'
               to='/bottles'
             >
               Bottles
@@ -60,7 +60,7 @@ export default function Specialty () {
             } transform transition duration-1000 ease-in-out text-center`}
           >
             <Link
-              className='  bg-secondary px-5 py-3 border border-tertiary shadow-sm   font-face-ko tracking-widest text-tertiary  transform transition duration-500 ease-in-out  focus:outline-none uppercase'
+              className='  bg-secondary px-5 py-3 border border-gray-600 shadow-sm   font-face-ko tracking-widest text-tertiary  transform transition duration-500 ease-in-out  focus:outline-none uppercase'
               to='/happy-hour'
             >
               Happy Hour

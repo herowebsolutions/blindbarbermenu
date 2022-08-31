@@ -27,7 +27,7 @@ function App () {
         id: 2,
         name: 'Hot Heather',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Patron Blanco Tequila, mango brandy, grapefruit, ginger, lime`
+        ingredients: `Patron Blanco, pamplemousse, koval ginger, green chile, lime`
       },
       {
         id: 3,
@@ -39,7 +39,7 @@ function App () {
         id: 4,
         name: 'Young Forever',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `La Luna Mezcal, blanc vermouth, grapefruit, lime, salt + fizzy soda water`
+        ingredients: `La Luna Mezcal, blanc vermouth, grapefruit, lime, salt + Perrier original`
       },
       {
         id: 5,
@@ -160,7 +160,7 @@ function App () {
         name: 'Bright Lights',
         desc: 'frat boy highball',
         ingredients:
-          'Haku Vodka, Aperol, lime, Watermelon Red Bull, Topo Chico',
+          'Haku Vodka, Aperol, Watermelon Red Bull, Perrier original',
         price: '$13'
       },
       {
@@ -446,12 +446,6 @@ function App () {
         name: 'Spring Water',
         price: '$5',
         desc: 'Acqua Panna Still | Perrier Sparkling'
-      },
-      {
-        id: 4,
-        name: 'Mineral Water',
-        price: '$5',
-        desc: 'Topo Chico | Topo Chico Grapefruit'
       }
     ]
   }
@@ -1241,7 +1235,7 @@ function App () {
         name: 'Bright Lights',
         desc: 'frat boy highball',
         ingredients:
-          'Haku Vodka, Aperol, lime, Watermelon Red Bull, Topo Chico'
+        'Haku Vodka, Aperol, Watermelon Red Bull, Perrier original'
         
       },
     ]

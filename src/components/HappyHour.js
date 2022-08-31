@@ -15,12 +15,12 @@ export default function HappyHour ({
   return (
     <>
       <div
-        className=' min-h-screen sm:border-0 sm:border-none  bg-gray-100'
+        className='min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
         id='highballs'
       >
         <div className=' max-w-7xl h-full mx-auto py-4 sm:px-1 lg:px-8 '>
           <div
-            className=' w-32 mx-auto pt-12'
+            className=' w-32 mx-auto pt-16'
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine'
           >
@@ -35,7 +35,7 @@ export default function HappyHour ({
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine'
           >
-            <p className='italic text-center text-xs font-face-ga lg:mx-64'>
+            <p className='italic text-center text-xs font-face-ga lg:mx-64 mx-6'>
               Thank you for being safe and supporting the Blind Barber team. We
               reserve the right to deny service to anyone that chooses not to
               abide by our posted safety precautions.
@@ -53,7 +53,7 @@ export default function HappyHour ({
             {Object.keys(highball).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 text-center '>
-                  <div className='flex justify-around mt-6'>
+                  <div className='flex justify-around '>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
                       
@@ -100,7 +100,7 @@ export default function HappyHour ({
             {Object.keys(martinis).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 text-center '>
-                  <div className='flex justify-around mt-6'>
+                  <div className='flex justify-around'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
                     </h1>
@@ -142,7 +142,7 @@ export default function HappyHour ({
             {Object.keys(more).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
-                  <div className='flex justify-center mt-6'>
+                  <div className='flex justify-center'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       <span className='lowercase'>and</span> {head}
                     </h1>
@@ -174,11 +174,9 @@ export default function HappyHour ({
               </div>
             ))}
           </div>
-          <div className='py-12'>
-            <p className='italic text-center text-xs font-face-ga sm:px-4 lg:mx-64'>
-              An automatic service fee of 20% will be added to all tabs
-            </p>
-          </div>
+          <div>
+          <p className='italic text-xs justify-center text-center items-center p-10'>*All tabs are subject to automatic 20% gratuity</p>
+        </div>
         </div>
       </div>
     </>

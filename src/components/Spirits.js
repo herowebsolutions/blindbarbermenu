@@ -4,7 +4,7 @@ import React from 'react'
 export default function Spirits ({ spirits, top }) {
   return (
     <div
-      className=' min-h-screen pb-20 font-dosis sm:border-0 sm:border-none  bg-gray-100'
+      className=' min-h-screen font-dosis sm:border-0 sm:border-none  bg-gray-100'
       id='spirits'
     >
       <div className=' max-w-7xl h-full mx-auto sm:px-1 lg:px-8 '>
@@ -16,7 +16,7 @@ export default function Spirits ({ spirits, top }) {
               <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-                    Spirits 
+                    Spirits
                   </h1>
                 </div>
                 <div className='w-full border-t border-gray-300' />
@@ -39,25 +39,24 @@ export default function Spirits ({ spirits, top }) {
                         </h1>
 
                         <h3 className='text-md font-face-ga tracking-wide'>
-                          {item.vol}  {item.origin}
+                          {item.vol} {item.origin}
                         </h3>
                       </div>
                     </div>
                   </li>
                 ))}
               </ul>
-              
             </div>
           ))}
         </div>
-          {/* TOP */}
-          <div className='text-primary py-3'>
+        {/* TOP */}
+        <div className='text-primary py-3'>
           {Object.keys(top).map(head => (
             <div key={head} className='relative'>
               <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex-col text-center justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-                    Top Shelf 
+                    Top Shelf
                   </h1>
                   <p className='italic'>*all top shelf pours are 1.5 ounces.</p>
                 </div>
@@ -81,17 +80,18 @@ export default function Spirits ({ spirits, top }) {
                         </h1>
 
                         <h3 className='text-md font-face-ga tracking-wide'>
-                          {item.vol}  {item.origin}
+                          {item.vol} {item.origin}
                         </h3>
                       </div>
                     </div>
                   </li>
                 ))}
               </ul>
-              
-              
             </div>
           ))}
+        </div>
+        <div>
+          <p className='italic text-xs justify-center text-center items-center p-10'>*All tabs are subject to automatic 20% gratuity</p>
         </div>
       </div>
     </div>
