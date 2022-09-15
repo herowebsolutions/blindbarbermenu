@@ -15,13 +15,38 @@ import BottlesNav from './components/BottlesNav'
 import HappyNav from './components/HappyNav'
 
 function App () {
+  // temp menu
+  // const bombay = {
+  //   bombay: [
+  //     {
+  //       id: 1,
+  //       name: 'Sapphire & Tonic',
+  //       desc: 'ripe strawberry with a punch',
+  //       ingredients: `Bombay Sapphire, Tonic, Citrus`
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'Classic Gimlet',
+  //       desc: 'taste of the tropics with zippy, gingery heat',
+  //       ingredients: `Bombay Sapphire, Lime, Simple`
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'Bombay Negroni',
+  //       desc: 'taste of the tropics with zippy, gingery heat',
+  //       ingredients: `Bombay Sapphire, Sweet Vermouth, Campari`
+  //     },
+
+  //   ]
+  // }
+  // temp menu
   const signature = {
     signature: [
       {
         id: 1,
         name: 'Strawberry Fields',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Deep Eddy, Cocchi Rosa, Yellow Chartreuse, strawberry, lemon`
+        ingredients: `Grey Goose, Cocchi Rosa, strawberry, lemongrass, lemon`
       },
       {
         id: 2,
@@ -33,7 +58,7 @@ function App () {
         id: 3,
         name: 'White Ferrari',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Casamigos Reposado, white port, persimmon, lime`
+        ingredients: `Casamigos Reposado, Pineau de Charentes, spiced pear, lime`
       },
       {
         id: 4,
@@ -45,7 +70,7 @@ function App () {
         id: 5,
         name: 'Batman',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Hendrick's, Italicus Rosolio, Pineau de Charentes, lemon, cava, absinthe `
+        ingredients: `Hendrick's, Cocchi Americano, St. Germain, lemon, cava, absinthe`
       },
       {
         id: 6,
@@ -175,7 +200,6 @@ function App () {
   }
   const wine = {
     wine: [
-      
       {
         id: 1,
         name: 'Pinot Blanc Domaine Paul Blanck',
@@ -183,7 +207,7 @@ function App () {
         origin: 'Alsace, France',
         vol: '13°'
       },
-     
+
       {
         id: 2,
         name: 'No Fine Print',
@@ -211,7 +235,7 @@ function App () {
         price: '$17/$65',
         origin: 'Abruzzo, Italy',
         vol: '13.5°'
-      },
+      }
     ]
   }
 
@@ -295,13 +319,20 @@ function App () {
     draft: [
       {
         id: 1,
-        name: 'Michelob Ultra',
-        price: '$8',
-        desc: 'Light Lager',
-        vol: '4.2°'
+        name: 'Moors Helles Lager',
+        price: '$7',
+        desc: 'Pale Lager',
+        vol: '5.2°'
       },
       {
         id: 2,
+        name: 'Stella',
+        price: '$8',
+        desc: 'Pilsner',
+        vol: '5.2°'
+      },
+      {
+        id: 3,
         name: 'Cruz Blanca Mexico Calling',
         price: '$9',
         desc: 'Lager',
@@ -309,18 +340,18 @@ function App () {
       },
 
       {
-        id: 3,
-        name: 'Goose Island Neon Beer Hug',
-        price: '$9',
-        desc: 'IPA',
-        vol: '7.0°'
-      },
-      {
         id: 4,
         name: 'Cigar City Guayabera',
         price: '$9',
         desc: 'Citra Pale Ale',
         vol: '5.5°'
+      },
+      {
+        id: 5,
+        name: 'Goose Island Neon Beer Hug',
+        price: '$9',
+        desc: 'IPA',
+        vol: '7.0°'
       }
     ]
   }
@@ -589,7 +620,7 @@ function App () {
       {
         id: 19,
         name: 'Casamigos Blanco',
-        price: '$12',
+        price: '$14',
         vol: '',
         title: 'Tequila'
       },
@@ -985,8 +1016,7 @@ function App () {
         id: 7,
         name: 'Don Julio 1942 Ultima Reserva',
         price: '$115'
-      },
-
+      }
     ]
   }
   // bottles
@@ -1234,10 +1264,8 @@ function App () {
         id: 4,
         name: 'Bright Lights',
         desc: 'frat boy highball',
-        ingredients:
-        'Haku Vodka, Aperol, Watermelon Red Bull, Perrier original'
-        
-      },
+        ingredients: 'Haku Vodka, Aperol, Watermelon Red Bull, Perrier original'
+      }
     ]
   }
   const martinis = {
@@ -1324,7 +1352,7 @@ function App () {
       }
     ]
   }
-  
+
   return (
     <>
       <Router>
