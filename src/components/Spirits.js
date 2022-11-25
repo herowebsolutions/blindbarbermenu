@@ -26,7 +26,7 @@ export default function Spirits ({ spirits, top }) {
                 {spirits[head].map(item => (
                   <li key={item.id}>
                     <div className='flex justify-left '>
-                      <h1 className='px-6 lg:px-48 text-2xl uppercase font-face-ko tracking-widest'>
+                      <h1 className='px-6 lg:px-48 text-2xl uppercase font-face-ko tracking-widest underline'>
                         {item.title}
                       </h1>
                     </div>

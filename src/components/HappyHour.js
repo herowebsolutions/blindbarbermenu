@@ -31,7 +31,7 @@ export default function HappyHour ({
             />
           </div>
           <div
-            className='pt-4'
+            className='pt-8'
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine'
           >
@@ -40,10 +40,25 @@ export default function HappyHour ({
               reserve the right to deny service to anyone that chooses not to
               abide by our posted safety precautions.
             </p>
-            <p className='py-6 italic text-center font-bold text-sm font-face-ga tracking-wider'>
+            <p className='pt-8 italic text-center font-bold text-sm font-face-ga tracking-wider'>
               Wed-Fri, 5-7pm
             </p>
           </div>
+          {/* VET DAY COCKTAIL */}
+          
+          {/* <div
+            className=' w-64 mx-auto pt-16'
+            data-aos='fade-zoom-in'
+            data-aos-easing='ease-in-sine'
+          >
+            <img
+              src={content.header.img}
+              placeholder={content.header.imgPlaceholder}
+              alt='Dewars'
+            />
+          </div> */}
+          
+
           {/* HIGHBALLS */}
           <div
             className='text-primary py-3 text-center'
@@ -53,7 +68,7 @@ export default function HappyHour ({
             {Object.keys(highball).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 text-center '>
-                  <div className='flex justify-around '>
+                  <div className='flex justify-around mt-6'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
                       
@@ -61,7 +76,7 @@ export default function HappyHour ({
                     <h1 className='pt-8 text-sm font-face-ko'>
                       $
                       <span className='pt-8 text-2xl font-semibold tracking-widest'>
-                        6
+                        8
                       </span>
                     </h1>
                   </div>
@@ -80,7 +95,7 @@ export default function HappyHour ({
                           <h1 className='text-md uppercase font-semibold font-face-px tracking-widest'>
                             {item.name}
                           </h1>
-                          <h3 className='text-md font-face-ga pb-4 tracking-wide'>
+                          <h3 className='pt-2 text-md font-face-ga pb-4 tracking-wide'>
                             {item.ingredients}
                           </h3>
                         </div>
@@ -100,14 +115,14 @@ export default function HappyHour ({
             {Object.keys(martinis).map(head => (
               <div key={head} className='relative'>
                 <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 text-center '>
-                  <div className='flex justify-around'>
+                  <div className='flex justify-around mt-6'>
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head}
                     </h1>
                     <h1 className='pt-8 text-sm font-face-ko'>
                       $
                       <span className='pt-8 text-2xl font-semibold tracking-widest'>
-                        8
+                        10
                       </span>
                     </h1>
                   </div>
@@ -126,8 +141,11 @@ export default function HappyHour ({
                           <h1 className='text-md uppercase font-semibold font-face-px tracking-widest'>
                             {item.name}
                           </h1>
-                          <h3 className='text-md font-face-ga pb-4 tracking-wide'>
+                          <h3 className='pt-2 text-md font-face-ga pb- tracking-wide'>
                             {item.ingredients}
+                          </h3>
+                          <h3 className='text-sm font-face-ga pb-4 tracking-wide'>
+                            {item.promo}
                           </h3>
                         </div>
                       </div>

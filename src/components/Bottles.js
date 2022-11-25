@@ -183,7 +183,7 @@ export default function Bottles ({
                             aria-hidden='true'
                           />
                           <h1 className='text-md uppercase font-semibold font-face-px tracking-widest'>
-                            {item.name} {item.upcharge}
+                            {item.name}<span className='italic font-normal ml-2'>{item.upcharge}</span> 
                           </h1>
                           <h3 className='text-md font-face-ga tracking-wide'>
                             {item.desc}

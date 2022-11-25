@@ -10,7 +10,7 @@ const content = {
     homeBg: process.env.PUBLIC_URL + '/assets/BBChicago.jpeg'
   },
   header: {
-    img: process.env.PUBLIC_URL + '/assets/developer.png',
+    img: process.env.PUBLIC_URL + '/assets/Dewars2.png',
 
     imgPlaceholder: 'https://wallpaperaccess.com/full/1129018.jpg',
     text: ['Blind Barber'],

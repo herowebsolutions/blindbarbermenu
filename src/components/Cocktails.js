@@ -131,7 +131,7 @@ export default function Cocktails ({
                           <h1 className='text-md uppercase font-semibold font-face-px tracking-widest'>
                             {item.name}
                           </h1>
-                          <h3 className='text-md font-face-ga tracking-wide'>
+                          <h3 className='pt-2 pb-3 text-md font-face-ga tracking-wide'>
                             {item.ingredients}
                           </h3>
                         </div>
@@ -244,7 +244,7 @@ export default function Cocktails ({
                     <h1 className='pt-8 text-sm font-face-ko'>
                       $
                       <span className='pt-8 text-2xl font-semibold tracking-widest'>
-                        13
+                        14
                       </span>
                     </h1>
                   </div>
