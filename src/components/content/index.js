@@ -1,6 +1,7 @@
 const content = {
   nav: {
     logo: process.env.PUBLIC_URL + '/assets/BBlogo.png',
+    logoPlaceholder: process.env.PUBLIC_URL + '/assets/logo-placeholder.jpeg',
     logoWhite: process.env.PUBLIC_URL + '/assets/BBlogowhite.png',
     favicon: process.env.PUBLIC_URL + '/assets/BBlogoCrop.png',
     faviconWhite: process.env.PUBLIC_URL + '/assets/BBlogowhitecrop.png',

@@ -13,6 +13,7 @@ import HappyHour from './components/HappyHour'
 import Footer from './components/Footer'
 import BottlesNav from './components/BottlesNav'
 import HappyNav from './components/HappyNav'
+import Events from './components/Events'
 
 function App () {
   // temp menu
@@ -201,31 +202,38 @@ function App () {
         origin: 'Alsace, France',
         vol: '13°'
       },
-
       {
         id: 2,
-        name: 'No Fine Print',
+        name: 'Grapesmith & Crusher 2020 Pinot Noir',
+        price: '$13/$60',
+        origin: 'Willamette, CA',
+        vol: '13°'
+      },
+
+      {
+        id: 3,
+        name: 'No Fine Print Cabernet Sauvignon',
         price: '$12/$54',
         origin: 'Lake County, CA',
         vol: '14.5°'
       },
       
       {
-        id: 3,
+        id: 4,
         name: `Las Jarras Wines 2021 'Superbloom' Carbonic Pink Zero (Madera Foothills)`,
         price: '$20/$75',
         origin: 'Central Valley, CA',
         vol: '10.5°'
       },
       {
-        id: 4,
+        id: 5,
         name: `Lammidia 2020 'Miscela' Bianco, Abruzzo`,
         price: '$17/$65',
         origin: 'Abruzzo, Italy',
         vol: '13.5°'
       },
       {
-        id: 5,
+        id: 6,
         name: `Le Fraiche 2021 Chiaretto Di Bardolina Rosé`,
         price: '$12/$60',
         origin: 'Veneto, Italy',
@@ -290,14 +298,14 @@ function App () {
       {
         id: 2,
         name: 'Veuve Clicquot Brut',
-        price: '$200',
+        price: '$250',
         origin: 'Champagne, France',
         vol: '12°'
       },
       {
         id: 3,
         name: 'Veuve Clicquot Rosé',
-        price: '$225',
+        price: '$300',
         origin: 'Champagne, France',
         vol: '12.5°'
       },
@@ -1303,6 +1311,18 @@ function App () {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route
+            path='/events'
+            element={
+              <>
+                <Events 
+                signature={signature}
+                />
+                
+                <Footer />
+              </>
+            }
+          />
           <Route
             path='/bottles'
             element={
