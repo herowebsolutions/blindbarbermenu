@@ -57,12 +57,7 @@ export default function Cocktails ({
                     <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
                       {head} Cocktails
                     </h1>
-                    <h1 className='pt-8 text-sm font-face-ko'>
-                      $
-                      <span className='pt-8 text-2xl font-semibold tracking-widest'>
-                        15
-                      </span>
-                    </h1>
+                    
                   </div>
                   <div className='w-full border-t border-gray-300' />
                 </div>
