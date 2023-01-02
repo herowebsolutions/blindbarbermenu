@@ -17,32 +17,21 @@ import Events from './components/Events'
 
 function App () {
   // temp menu
-  // const bombay = {
-  //   bombay: [
+  // const NYE = {
+  //   NYE: [
   //     {
   //       id: 1,
   //       name: 'Sapphire & Tonic',
   //       desc: 'ripe strawberry with a punch',
   //       ingredients: `Bombay Sapphire, Tonic, Citrus`
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'Classic Gimlet',
-  //       desc: 'taste of the tropics with zippy, gingery heat',
-  //       ingredients: `Bombay Sapphire, Lime, Simple`
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'Bombay Negroni',
-  //       desc: 'taste of the tropics with zippy, gingery heat',
-  //       ingredients: `Bombay Sapphire, Sweet Vermouth, Campari`
-  //     },
+  //     }
 
   //   ]
   // }
   // temp menu
   const signature = {
     signature: [
+      
       {
         id: 1,
         name: 'Strawberry Fields',
@@ -116,14 +105,9 @@ function App () {
         id: 1,
         name: 'Fancy Old Fashioned',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Legent Bourbon, demerara, angostura, orange`
+        ingredients: `Uncle Nearest 1856, demerara, angostura, orange`
       },
-      {
-        id: 2,
-        name: 'Fancy Margarita',
-        desc: 'ripe strawberry with a punch',
-        ingredients: `Patron Sherry Cask Añejo, Cointreau, lime, agave`
-      }
+      
     ]
   }
   const nightCaps = {
@@ -345,10 +329,10 @@ function App () {
       },
       {
         id: 4,
-        name: 'Goose Island Neon Beer Hug',
+        name: 'Hop Valley Bubble Stash',
         price: '$9',
         desc: 'IPA',
-        vol: '7.0°'
+        vol: '6.2°'
       }
     ]
   }
@@ -377,20 +361,14 @@ function App () {
       },
       {
         id: 4,
-        name: 'Estrella Jalisco',
+        name: 'Modelo',
         price: '$8',
         desc: 'Mexican Lager',
-        vol: '4.5°'
+        vol: '4.4°'
       },
+      
       {
         id: 5,
-        name: 'Spiteful IPA',
-        price: '$8',
-        desc: 'IPA',
-        vol: '6.2°'
-      },
-      {
-        id: 6,
         name: 'Spiteful Alley Time',
         price: '$7',
         desc: 'Pale Ale',
@@ -398,35 +376,35 @@ function App () {
       },
       
       {
-        id: 7,
+        id: 6,
         name: 'High Noon',
         price: '$11',
         desc: 'Hard Seltzer',
         vol: '4.5°'
       },
       {
-        id: 8,
+        id: 7,
         name: 'Amass Seltzer',
         price: '$12',
         desc: 'Hard Seltzer',
         vol: '5°'
       },
       {
-        id: 9,
+        id: 8,
         name: 'System Seltzer Mango',
         price: '$10',
         desc: 'Hard Seltzer',
         vol: '5°'
       },
       {
-        id: 10,
+        id: 9,
         name: 'SKRT',
         price: '$10',
         desc: 'Hard Seltzer',
         vol: '5°'
       },
       {
-        id: 11,
+        id: 10,
         name: 'Visitor Lager',
         price: '$8',
         desc: 'Gluten-Reduced, non-alcoholic beer',
@@ -458,25 +436,45 @@ function App () {
   }
   const snacks = {
     snacks: [
+      
+      
       {
         id: 1,
-        name: 'Chicken Tenders',
-        desc: '5 Tenders',
-        ingredients: 'Blind Buffalo sauce, ranch, ketchup',
-        price: '$15'
+        name: 'French Fries',
+        desc: 'Add J.P. Graziano Giardinera +$2',
+        ingredients: 'House-cut Kennebec potatoes, sea salt, fancy ketchup',
+        price: '$8'
       },
       {
         id: 2,
         name: 'Crab Rangoon',
-        desc: '5 Pieces',
-        ingredients: 'Everything seasoning, Thai sweet chili',
+        desc: '',
+        ingredients: 'Fried wonton wrapper, cream cheese, crab, Thai chili sauce',
         price: '$9'
       },
       {
         id: 3,
-        name: 'Fries',
-        ingredients: 'House-cut Kennebec potato, sea salt',
-        price: '$8'
+        name: `Seb's Secret Recipe Chicken Nuggets`,
+        ingredients: `Big Nugs, Frank's® RedHot®, TRUFF Ranch`,
+        price: '$15'
+      },
+      {
+        id: 4,
+        name: `Grilled Cheese #1`,
+        ingredients: `Aya Pastry Sourdough, Parm crust, American, VT Cheddar, Chilli Crisp`,
+        price: '$13'
+      },
+      {
+        id: 5,
+        name: `Seb's Crispy Chicken Sandwich & Fries`,
+        ingredients: `Brioche bun, double dipped breast, habanero hot honey, house pickles`,
+        price: '$17'
+      },
+      {
+        id: 6,
+        name: `Biff's Patty Melt & Fries`,
+        ingredients: `Aya Pastry Sourdough, Swiss, special sauce, Bourbon & brown sugar onions`,
+        price: '$17'
       }
     ]
   }
@@ -518,7 +516,8 @@ function App () {
         id: 6,
         name: 'Botanist',
         price: '$14',
-        vol: ''
+        vol: '',
+        title: 'Gin'
       },
       {
         id: 7,
@@ -709,232 +708,203 @@ function App () {
         price: '$15',
         vol: ''
       },
+      
       {
         id: 38,
-        name: 'Jon Basil Blanco',
-        price: '$15',
-        vol: ''
-      },
-      {
-        id: 39,
-        name: 'Jon Basil Reposado',
-        price: '$17',
-        vol: ''
-      },
-      {
-        id: 40,
         name: 'Lunazul',
         price: '$12',
         vol: ''
       },
       {
-        id: 41,
+        id: 39,
         name: 'Patrón Silver',
         price: '$15',
         vol: ''
       },
       {
-        id: 42,
+        id: 40,
         name: 'Patrón Reposado',
         price: '$17',
         vol: ''
       },
       {
-        id: 43,
+        id: 41,
         name: 'Patrón Añejo',
         price: '$18',
         vol: ''
       },
+      
       {
-        id: 44,
-        name: 'Patrón Sherry Cask Aged Extra Añejo',
-        price: '$22',
-        vol: ''
-      },
-      {
-        id: 45,
+        id: 42,
         name: 'Tres Generaciones Reposado',
         price: '$15',
         vol: ''
       },
       {
-        id: 46,
+        id: 43,
         name: 'Amaras Cupreata',
         price: '$16',
         vol: '',
         title: 'Mezcal'
       },
       {
-        id: 47,
+        id: 44,
         name: 'La Luna X Blind Barber Private Batch',
         price: '$20',
         vol: ''
       },
       {
-        id: 48,
+        id: 45,
         name: 'Fidencio',
         price: '$14',
         vol: ''
       },
       {
-        id: 49,
+        id: 46,
         name: 'La Luna Cupreata',
         price: '$12',
         vol: ''
       },
       {
-        id: 50,
+        id: 47,
         name: 'Del Maguey Vida',
         price: '$14',
         vol: ''
       },
       {
-        id: 51,
+        id: 48,
         name: 'Rosaluna',
         price: '$14',
         vol: ''
       },
       {
-        id: 52,
+        id: 49,
         name: 'George Dickel',
         price: '$14',
         vol: '',
         title: 'Rye'
       },
       {
-        id: 53,
+        id: 50,
         name: 'High West Double',
         price: '$17',
         vol: ''
       },
-      
       {
-        id: 54,
-        name: 'Michters',
-        price: '$14',
-        vol: ''
-      },
-      {
-        id: 55,
+        id: 51,
         name: 'Old Overholt',
         price: '$14',
         vol: ''
       },
       {
-        id: 56,
+        id: 52,
         name: 'Angels Envy',
         price: '$18',
         vol: '',
         title: 'Bourbon'
       },
       {
-        id: 57,
+        id: 53,
         name: 'Buffalo Trace',
         price: '$16',
         vol: ''
       },
       {
-        id: 58,
+        id: 54,
         name: 'Jack Daniels',
         price: '$14',
         vol: ''
       },
       
       {
-        id: 59,
+        id: 55,
         name: 'Knob Creek',
         price: '$14',
         vol: ''
       },
       {
-        id: 60,
+        id: 56,
         name: `Maker's Mark`,
         price: '$15',
         vol: ''
       },
       {
-        id: 61,
-        name: 'Old Grand Dad (80 Proof)',
+        id: 57,
+        name: 'Benchmark',
         price: '$12',
         vol: ''
       },
       {
-        id: 62,
+        id: 58,
         name: 'Dewars White Label',
         price: '$14',
         vol: '',
         title: 'Scotch'
       },
       {
-        id: 63,
+        id: 59,
         name: 'Dewars Japanese Smooth',
         price: '$14',
         vol: ''
       },
       {
-        id: 64,
+        id: 60,
         name: 'Glenlivet 12 Year',
         price: '$14',
         vol: ''
       },
       {
-        id: 65,
+        id: 61,
         name: 'Johnnie Walker Black',
         price: '$16',
         vol: ''
       },
       {
-        id: 66,
+        id: 62,
         name: 'Johnnie Walker High Rye',
         price: '$16',
         vol: ''
       },
       {
-        id: 67,
+        id: 63,
         name: 'Jameson',
         price: '$14',
         vol: '',
         title: 'Whiskey'
       },
       {
-        id: 68,
+        id: 64,
         name: 'Roe & Co',
         price: '$12',
         vol: ''
       },
       {
-        id: 69,
+        id: 65,
         name: 'Suntory Toki',
         price: '$15',
         vol: ''
       },
       {
-        id: 70,
-        name: 'Westward Single Malt Whiskey',
-        price: '$16',
-        vol: ''
-      },
-      {
-        id: 71,
+        id: 66,
         name: `D'usse`,
         price: '$16',
         vol: '',
         title: 'Cognac'
       },
       {
-        id: 72,
+        id: 67,
         name: 'Hennessey VS',
         price: '$15',
         vol: ''
       },
       {
-        id: 73,
+        id: 68,
         name: 'Remy Martin 1738',
         price: '$19',
         vol: ''
       },
       {
-        id: 74,
+        id: 69,
         name: 'Remy Martin VSOP',
         price: '$16',
         vol: ''
