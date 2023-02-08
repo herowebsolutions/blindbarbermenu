@@ -42,7 +42,7 @@ function App () {
         id: 2,
         name: 'Hot Heather',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Patron Blanco, pamplemousse, koval ginger, green chile, lime`
+        ingredients: `Don Julio Blanco Tequila, pamplemousse, koval ginger, green chile, lime`
       },
       {
         id: 3,
@@ -60,7 +60,7 @@ function App () {
         id: 5,
         name: 'Batman',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Hendrick's, Cocchi Americano, St. Germain, lemon, cava, absinthe`
+        ingredients: `Hendrick's Neptunia, Cocchi Americano, St. Germain, lemon, cava, absinthe`
       },
       {
         id: 6,
@@ -72,7 +72,7 @@ function App () {
         id: 7,
         name: 'Adult Swim',
         desc: 'taste of the tropics with zippy, gingery heat',
-        ingredients: `Maker's Mark, amontillado sherry, China-China, cacao`
+        ingredients: `Jack Daniel's Bonded, amontillado sherry, China-China, cacao`
       }
     ]
   }
@@ -89,7 +89,7 @@ function App () {
         id: 2,
         name: 'Espresso Martini',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Grey Goose Vodka, Borghetti, Mr. Black, Bueno Days Coffee`
+        ingredients: `Grey Goose Vodka, Borghetti, Mr. Black, Kyoto Black Coffee`
       },
       {
         id: 3,
@@ -105,7 +105,8 @@ function App () {
         id: 1,
         name: 'Fancy Old Fashioned',
         desc: 'ripe strawberry with a punch',
-        ingredients: `Uncle Nearest 1856, demerara, angostura, orange`
+        ingredients: `Uncle Nearest 1856, demerara, angostura, orange`,
+        promo: '*Uncle Nearest will donate $1 to the HBCU for each Fancy Old Fashioned sold between now and March 31*'
       },
       
     ]
@@ -115,28 +116,28 @@ function App () {
       {
         id: 1,
         name: 'Fernet Branca',
-        desc: '39°',
+        desc: '39%',
         origin: `Milan, Italy`,
         price: '$10'
       },
       {
         id: 2,
         name: 'Malort',
-        desc: '35°',
+        desc: '35%',
         origin: `Chicago, Illinois`,
         price: '$8'
       },
       {
         id: 3,
         name: 'Montenegro',
-        desc: '46°',
+        desc: '46%',
         origin: `Bologna, Italy`,
         price: '$11'
       },
       {
         id: 4,
         name: 'Skrewball',
-        desc: '35°',
+        desc: '35%',
         origin: `San Diego, California`,
         price: '$10'
       }
@@ -181,17 +182,17 @@ function App () {
     wine: [
       {
         id: 1,
-        name: 'Pinot Blanc Domaine Paul Blanck',
+        name: `Pra 2021 'Otto' Soave Classico`,
         price: '$14/$62',
-        origin: 'Alsace, France',
-        vol: '13°'
+        origin: 'Veneto, Italy',
+        vol: '13%'
       },
       {
         id: 2,
         name: 'Grapesmith & Crusher 2020 Pinot Noir',
-        price: '$13/$60',
+        price: '$14/$64',
         origin: 'Willamette, CA',
-        vol: '13°'
+        vol: '13%'
       },
 
       {
@@ -199,7 +200,7 @@ function App () {
         name: 'No Fine Print Cabernet Sauvignon',
         price: '$12/$54',
         origin: 'Lake County, CA',
-        vol: '14.5°'
+        vol: '14.5%'
       },
       
       {
@@ -207,21 +208,21 @@ function App () {
         name: `Las Jarras Wines 2021 'Superbloom' Carbonic Pink Zero (Madera Foothills)`,
         price: '$20/$75',
         origin: 'Central Valley, CA',
-        vol: '10.5°'
+        vol: '10.5%'
       },
       {
         id: 5,
         name: `Lammidia 2020 'Miscela' Bianco, Abruzzo`,
         price: '$17/$65',
         origin: 'Abruzzo, Italy',
-        vol: '13.5°'
+        vol: '13.5%'
       },
       {
         id: 6,
         name: `Le Fraiche 2021 Chiaretto Di Bardolina Rosé`,
         price: '$12/$60',
         origin: 'Veneto, Italy',
-        vol: '12.5°'
+        vol: '12.5%'
       },
     ]
   }
@@ -233,7 +234,7 @@ function App () {
         name: 'Jeio Cuvee Sparkling Rosé',
         price: '$14/$62',
         origin: 'Veneto, Italy',
-        vol: '11.5°'
+        vol: '11.5%'
       }
     ]
   }
@@ -244,21 +245,21 @@ function App () {
         name: 'Jeio Cuvee Sparkling Rosé',
         price: '$14/$62',
         origin: 'Veneto, Italy',
-        vol: '11.5°'
+        vol: '11.5%'
       },
       {
         id: 2,
         name: 'Campa Viejo Cava',
         price: '$14/$62',
         origin: 'Logrono, Spain',
-        vol: '11.5°'
+        vol: '11.5%'
       },
       {
         id: 3,
         name: 'Chandon Garden Spritz Split',
         price: '$13',
         origin: 'Mendoza, Argentina',
-        vol: '11°'
+        vol: '11%'
       },
       {
         id: 4,
@@ -266,7 +267,7 @@ function App () {
         price: '$10',
         origin: 'Washington, USA',
         desc: 'Pineapple Rosé Spritzer',
-        vol: '5°'
+        vol: '5%'
       }
     ]
   }
@@ -277,28 +278,28 @@ function App () {
         name: 'Moët Split',
         price: '$25',
         origin: 'Champagne, France',
-        vol: '12.2°'
+        vol: '12.2%'
       },
       {
         id: 2,
         name: 'Veuve Clicquot Brut',
         price: '$250',
         origin: 'Champagne, France',
-        vol: '12°'
+        vol: '12%'
       },
       {
         id: 3,
         name: 'Veuve Clicquot Rosé',
         price: '$300',
         origin: 'Champagne, France',
-        vol: '12.5°'
+        vol: '12.5%'
       },
       {
         id: 4,
         name: 'Dom Pérignon',
         price: '$450',
         origin: 'Champagne, France',
-        vol: '12.5°'
+        vol: '12.5%'
       }
     ]
   }
@@ -310,29 +311,29 @@ function App () {
         name: 'High Life',
         price: '$7',
         desc: 'American Style Lager',
-        vol: '4.6°'
+        vol: '4.6%'
       },
       {
         id: 2,
         name: 'Cruz Blanca Mexico Calling',
         price: '$9',
         desc: 'Lager',
-        vol: '4.7°'
+        vol: '4.7%'
       },
 
       {
         id: 3,
-        name: 'Cigar City Guayabera',
+        name: 'Blue Moon',
         price: '$9',
-        desc: 'Citra Pale Ale',
-        vol: '5.5°'
+        desc: 'Belgian Wheat Ale',
+        vol: '5.4%'
       },
       {
         id: 4,
         name: 'Hop Valley Bubble Stash',
         price: '$9',
         desc: 'IPA',
-        vol: '6.2°'
+        vol: '6.2%'
       }
     ]
   }
@@ -343,28 +344,28 @@ function App () {
         name: 'Peroni',
         price: '$9',
         desc: 'Italian Lager',
-        vol: '5.1°'
+        vol: '5.1%'
       },
       {
         id: 2,
         name: 'Coors Light',
         price: '$6',
         desc: 'Light Lager',
-        vol: '4.2°'
+        vol: '4.2%'
       },
       {
         id: 3,
-        name: 'Budweiser',
+        name: 'Coors Banquet',
         price: '$6',
         desc: 'American Pale Lager',
-        vol: '5°'
+        vol: '5%'
       },
       {
         id: 4,
         name: 'Modelo',
         price: '$8',
         desc: 'Mexican Lager',
-        vol: '4.4°'
+        vol: '4.4%'
       },
       
       {
@@ -372,43 +373,63 @@ function App () {
         name: 'Spiteful Alley Time',
         price: '$7',
         desc: 'Pale Ale',
-        vol: '6°'
+        vol: '6%'
       },
-      
+      {
+        id: 11,
+        name: 'Lagunitas Lil Sumpin Sumpin',
+        price: '$10',
+        desc: 'Wheat IPA',
+        vol: '7.5%'
+      },
+      {
+        id: 12,
+        name: `Moor's Brewing Co. Session Ale`,
+        vol: '5%',
+        desc: 'Session Ale',
+        price: '$10'
+      },
+      {
+        id: 13,
+        name: `Moor's Brewing Co. IPA`,
+        vol: '6.7%',
+        desc: 'IPA',
+        price: '$10'
+      },
       {
         id: 6,
         name: 'High Noon',
         price: '$11',
         desc: 'Hard Seltzer',
-        vol: '4.5°'
+        vol: '4.5%'
       },
       {
         id: 7,
         name: 'Amass Seltzer',
         price: '$12',
         desc: 'Hard Seltzer',
-        vol: '5°'
+        vol: '5%'
       },
       {
         id: 8,
         name: 'System Seltzer Mango',
         price: '$10',
         desc: 'Hard Seltzer',
-        vol: '5°'
+        vol: '5%'
       },
       {
         id: 9,
         name: 'SKRT',
         price: '$10',
         desc: 'Hard Seltzer',
-        vol: '5°'
+        vol: '5%'
       },
       {
         id: 10,
         name: 'Visitor Lager',
         price: '$8',
         desc: 'Gluten-Reduced, non-alcoholic beer',
-        vol: '0.5°'
+        vol: '0.5%'
       }
     ]
   }
@@ -437,7 +458,6 @@ function App () {
   const snacks = {
     snacks: [
       
-      
       {
         id: 1,
         name: 'French Fries',
@@ -460,22 +480,59 @@ function App () {
       },
       {
         id: 4,
-        name: `Grilled Cheese #1`,
-        ingredients: `Aya Pastry Sourdough, Parm crust, American, VT Cheddar, Chilli Crisp`,
-        price: '$13'
+        name: 'Berbere Hot Chicken Tenders',
+        desc: '',
+        ingredients: 'Berbere Chili Tenders, Garlic Honey, House Ranch',
+        price: '$17'
       },
       {
         id: 5,
-        name: `Seb's Crispy Chicken Sandwich & Fries`,
-        ingredients: `Brioche bun, double dipped breast, habanero hot honey, house pickles`,
-        price: '$17'
+        name: `Chicken wings`,
+        ingredients: `Choice of Giardiniera Garlic Parmesan or Lemon Pepper Buffalo`,
+        price: '$12.99'
       },
       {
         id: 6,
-        name: `Biff's Patty Melt & Fries`,
-        ingredients: `Aya Pastry Sourdough, Swiss, special sauce, Bourbon & brown sugar onions`,
+        name: 'Marinated Olives',
+        desc: '',
+        ingredients: 'House Marinated Olives, Toasted Sourdough',
+        price: '$8'
+      },
+      
+    ]
+  }
+  const sandwiches = {
+    sandwiches: [
+      
+      
+      {
+        id: 1,
+        name: `Seb's Crispy Chicken Sandwich`,
+        desc: '',
+        ingredients: 'Fried All White Meat Chicken Breast, House B&B Pickles, Truff Spicy Mayo, Fries',
         price: '$17'
+      },
+      {
+        id: 2,
+        name: 'BB Burguer',
+        desc: '',
+        ingredients: 'Two 4oz Beef Patties, Smoked Onions, American Cheese, Bacon Dijonaise, Fries',
+        price: '$16'
+      },
+      {
+        id: 3,
+        name: `Grilled Cheese #1`,
+        ingredients: `American Cheese, Aged Sharp Cheddar, Scamorza, Creamy Tomato Soup`,
+        price: '$15'
+      },
+      {
+        id: 4,
+        name: `Grilled Cheese #2`,
+        ingredients: `American cheese, Manchego, Chorizo, Fig Preserve`,
+        price: '$15'
       }
+      
+      
     ]
   }
   const spirits = {
@@ -708,203 +765,216 @@ function App () {
         price: '$15',
         vol: ''
       },
-      
       {
         id: 38,
+        name: 'John Basil Blanco',
+        price: '$17',
+        vol: ''
+      },
+      {
+        id: 39,
+        name: 'John Basil Reposado',
+        price: '$19',
+        vol: ''
+      },
+      
+      {
+        id: 40,
         name: 'Lunazul',
         price: '$12',
         vol: ''
       },
       {
-        id: 39,
+        id: 41,
         name: 'Patrón Silver',
         price: '$15',
         vol: ''
       },
       {
-        id: 40,
+        id: 42,
         name: 'Patrón Reposado',
         price: '$17',
         vol: ''
       },
       {
-        id: 41,
+        id: 43,
         name: 'Patrón Añejo',
         price: '$18',
         vol: ''
       },
       
+      
       {
-        id: 42,
-        name: 'Tres Generaciones Reposado',
-        price: '$15',
-        vol: ''
-      },
-      {
-        id: 43,
+        id: 44,
         name: 'Amaras Cupreata',
         price: '$16',
         vol: '',
         title: 'Mezcal'
       },
       {
-        id: 44,
+        id: 45,
         name: 'La Luna X Blind Barber Private Batch',
         price: '$20',
         vol: ''
       },
       {
-        id: 45,
+        id: 46,
         name: 'Fidencio',
         price: '$14',
         vol: ''
       },
       {
-        id: 46,
+        id: 47,
         name: 'La Luna Cupreata',
         price: '$12',
         vol: ''
       },
       {
-        id: 47,
+        id: 48,
         name: 'Del Maguey Vida',
         price: '$14',
         vol: ''
       },
       {
-        id: 48,
+        id: 49,
         name: 'Rosaluna',
         price: '$14',
         vol: ''
       },
       {
-        id: 49,
+        id: 50,
         name: 'George Dickel',
         price: '$14',
         vol: '',
         title: 'Rye'
       },
       {
-        id: 50,
+        id: 51,
         name: 'High West Double',
         price: '$17',
         vol: ''
       },
       {
-        id: 51,
+        id: 52,
         name: 'Old Overholt',
         price: '$14',
         vol: ''
       },
       {
-        id: 52,
+        id: 53,
         name: 'Angels Envy',
         price: '$18',
         vol: '',
         title: 'Bourbon'
       },
       {
-        id: 53,
+        id: 54,
         name: 'Buffalo Trace',
         price: '$16',
         vol: ''
       },
       {
-        id: 54,
+        id: 55,
         name: 'Jack Daniels',
         price: '$14',
         vol: ''
       },
       
       {
-        id: 55,
+        id: 56,
         name: 'Knob Creek',
         price: '$14',
         vol: ''
       },
       {
-        id: 56,
+        id: 57,
         name: `Maker's Mark`,
         price: '$15',
         vol: ''
       },
       {
-        id: 57,
+        id: 58,
         name: 'Benchmark',
         price: '$12',
         vol: ''
       },
       {
-        id: 58,
+        id: 59,
         name: 'Dewars White Label',
         price: '$14',
         vol: '',
         title: 'Scotch'
       },
       {
-        id: 59,
+        id: 60,
         name: 'Dewars Japanese Smooth',
         price: '$14',
         vol: ''
       },
       {
-        id: 60,
+        id: 61,
         name: 'Glenlivet 12 Year',
         price: '$14',
         vol: ''
       },
       {
-        id: 61,
+        id: 62,
         name: 'Johnnie Walker Black',
         price: '$16',
         vol: ''
       },
       {
-        id: 62,
+        id: 63,
         name: 'Johnnie Walker High Rye',
         price: '$16',
         vol: ''
       },
       {
-        id: 63,
+        id: 64,
         name: 'Jameson',
         price: '$14',
         vol: '',
         title: 'Whiskey'
       },
       {
-        id: 64,
+        id: 65,
         name: 'Roe & Co',
         price: '$12',
         vol: ''
       },
       {
-        id: 65,
+        id: 66,
         name: 'Suntory Toki',
         price: '$15',
         vol: ''
       },
       {
-        id: 66,
+        id: 67,
+        name: `Jack Daniel's Bonded`,
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 68,
         name: `D'usse`,
         price: '$16',
         vol: '',
         title: 'Cognac'
       },
       {
-        id: 67,
+        id: 69,
         name: 'Hennessey VS',
         price: '$15',
         vol: ''
       },
       {
-        id: 68,
+        id: 70,
         name: 'Remy Martin 1738',
         price: '$19',
         vol: ''
       },
       {
-        id: 69,
+        id: 71,
         name: 'Remy Martin VSOP',
         price: '$16',
         vol: ''
@@ -1208,13 +1278,13 @@ function App () {
       {
         id: 1,
         name: 'Espresso',
-        ingredients: 'Grey Goose Vodka, Mr.Black, Borghetti, Bueno Days Coffee'
+        ingredients: 'Grey Goose Vodka, Mr.Black, Borghetti, Kyoto Black Coffee'
       },
       {
         id: 2,
         name: 'Cosmopolitan',
         ingredients: 'Grey Goose Vodka, Cointreau, cranberry, lime',
-        promo: `*From now until December 31, $1 from every cosmo will go toward the Tales of the Cocktail foundation.*`
+        
       },
       {
         id: 3,
@@ -1234,42 +1304,42 @@ function App () {
       {
         id: 1,
         name: `Moor's Brewing Co. Session Ale`,
-        desc: '5°',
+        desc: '5%',
         type: 'Session Ale',
         price: '$6'
       },
       {
         id: 2,
         name: `Moor's Brewing Co. IPA`,
-        desc: '6.7°',
+        desc: '6.7%',
         type: 'IPA',
         price: '$6'
       },
       {
         id: 3,
         name: `No Fine Print Lil Fizz Sparkling`,
-        desc: '12.5°',
+        desc: '12.5%',
         type: 'Lake County, California',
         price: '$7'
       },
       {
         id: 4,
         name: `No Fine Print Cabernet Sauvignon`,
-        desc: '14.5°',
+        desc: '14.5%',
         type: 'Lake County, California',
         price: '$7'
       },
       {
         id: 5,
         name: `Amass Faerie Fizz`,
-        desc: '5°',
+        desc: '5%',
         type: 'Hard Seltzer',
         price: '$8'
       },
       {
         id: 6,
         name: `Chandon Garden Spritz`,
-        desc: '11°',
+        desc: '11%',
         type: 'Wine Spritzer',
         price: '$8'
       }
@@ -1341,7 +1411,7 @@ function App () {
                   champagne={champagne}
                 />
                 <Beer draft={draft} canned={canned} />
-                <Other other={other} snacks={snacks} />
+                <Other other={other} snacks={snacks} sandwiches={sandwiches}/>
                 <Spirits spirits={spirits} top={top} />
                 <Footer />
               </>

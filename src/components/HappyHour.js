@@ -144,9 +144,7 @@ export default function HappyHour ({
                           <h3 className='pt-2 text-md font-face-ga pb- tracking-wide'>
                             {item.ingredients}
                           </h3>
-                          <h3 className='text-sm font-face-ga pb-4 tracking-wide'>
-                            {item.promo}
-                          </h3>
+                          
                         </div>
                       </div>
                     </li>

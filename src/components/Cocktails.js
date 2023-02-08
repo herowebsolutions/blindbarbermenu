@@ -221,6 +221,9 @@ export default function Cocktails ({
                           <h3 className='text-md font-face-ga tracking-wide'>
                             {item.ingredients}
                           </h3>
+                          <h3 className='text-xs font-face-ga tracking-wide'>
+                            {item.promo}
+                          </h3>
                         </div>
                       </div>
                     </li>
