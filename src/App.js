@@ -22,7 +22,6 @@ function App () {
       {
         id: 1,
         name: `Sebby's Wings`,
-        desc: '',
         ingredients: 'Your choice of either 5 whole lemon pepper "Chicago Style" wings with Mild Sauce or 10 "Party Style" buffalo wings with pickled Thai Chilis and Pink Salt Ranch',
         price: '$16'
       },
