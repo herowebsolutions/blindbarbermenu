@@ -17,17 +17,25 @@ import Events from './components/Events'
 
 function App () {
   // temp menu
-  // const NYE = {
-  //   NYE: [
-  //     {
-  //       id: 1,
-  //       name: 'Sapphire & Tonic',
-  //       desc: 'ripe strawberry with a punch',
-  //       ingredients: `Bombay Sapphire, Tonic, Citrus`
-  //     }
+  const temp = {
+    temp: [
+      {
+        id: 1,
+        name: `Sebby's Wings`,
+        desc: '',
+        ingredients: 'Your choice of either 5 whole lemon pepper "Chicago Style" wings with Mild Sauce or 10 "Party Style" buffalo wings with pickled Thai Chilis and Pink Salt Ranch',
+        price: '$16'
+      },
+      {
+        id: 1,
+        name: `Deli Burger`,
+        desc: '',
+        ingredients: 'Double Patty, American Cheese, Shredded Lettuce, Red Onion, Tomato, Banana Peppers, and Salami on a hoagie. served with Jalapeno chips',
+        price: '$17'
+      },
 
-  //   ]
-  // }
+    ]
+  }
   // temp menu
   const signature = {
     signature: [
@@ -334,7 +342,15 @@ function App () {
         price: '$9',
         desc: 'IPA',
         vol: '6.2%'
-      }
+      },
+      {
+        id: 5,
+        name: 'Moors Beer Co',
+        price: '$10',
+        desc: 'Porter',
+        vol: '6%'
+      },
+
     ]
   }
   const canned = {
@@ -451,7 +467,7 @@ function App () {
         id: 3,
         name: 'Spring Water',
         price: '$5',
-        desc: 'Acqua Panna Still | Perrier Sparkling'
+        desc: 'Acqua Panna Still | San Pellegrino Sparkling'
       }
     ]
   }
@@ -461,7 +477,7 @@ function App () {
       {
         id: 1,
         name: 'French Fries',
-        desc: 'Add J.P. Graziano Giardinera +$2',
+        desc: 'Add J.P. Graziano Giardiniera +$2',
         ingredients: 'House-cut Kennebec potatoes, sea salt, fancy ketchup',
         price: '$8'
       },
@@ -495,7 +511,7 @@ function App () {
         id: 6,
         name: 'Marinated Olives',
         desc: '',
-        ingredients: 'House Marinated Olives, Toasted Sourdough',
+        ingredients: 'House Marinated Olives',
         price: '$8'
       },
       
@@ -514,9 +530,9 @@ function App () {
       },
       {
         id: 2,
-        name: 'BB Burguer',
+        name: 'BB Burger',
         desc: '',
-        ingredients: 'Two 4oz Beef Patties, Smoked Onions, American Cheese, Bacon Dijonaise, Fries',
+        ingredients: 'Two 4oz Beef Patties, Pickled smoked onions, American Cheese, Bacon Dijonnaise, Fries',
         price: '$16'
       },
       {
@@ -528,7 +544,7 @@ function App () {
       {
         id: 4,
         name: `Grilled Cheese #2`,
-        ingredients: `American cheese, Manchego, Chorizo, Fig Preserve`,
+        ingredients: `American Cheese, Manchego, Chorizo, Fig Preserve`,
         price: '$15'
       }
       
@@ -802,6 +818,24 @@ function App () {
         price: '$18',
         vol: ''
       },
+      {
+        id: 72,
+        name: 'Mijenta Reposado',
+        price: '$18',
+        vol: ''
+      },
+      {
+        id: 73,
+        name: 'Herradura Silver',
+        price: '$16',
+        vol: ''
+      },
+      {
+        id: 74,
+        name: 'Herradura Reposado',
+        price: '$18',
+        vol: ''
+      },
       
       
       {
@@ -1017,7 +1051,12 @@ function App () {
         id: 7,
         name: 'Don Julio 1942 Ultima Reserva',
         price: '$115'
-      }
+      },
+      {
+        id: 8,
+        name: 'Remy Martin XO',
+        price: '$45'
+      },
     ]
   }
   // bottles
@@ -1403,6 +1442,7 @@ function App () {
                   highballs={highballs}
                   fancy={fancy}
                   nightCaps={nightCaps}
+                  temp={temp}
                 />
                 <Wine
                   wine={wine}
