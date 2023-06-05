@@ -58,6 +58,8 @@ export default function BottlesNav () {
             {content.nav.bottlesLink[2]}
           </button>
         </ScrollLink>
+
+        
         
         
       </div>

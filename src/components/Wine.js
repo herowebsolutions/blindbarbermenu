@@ -17,7 +17,7 @@ export default function Wine ({ wine, bubbles, champagne }) {
               <div className='z-10 sticky top-0 border-t border-b border-gray-200 bg-gray-100 text-sm font-medium lg:mx-48 lg:px-4 '>
                 <div className='flex justify-center mt-6'>
                   <h1 className='pt-8 text-2xl uppercase font-face-ko tracking-widest'>
-                    Natural Wines
+                    Wines
                   </h1>
                 </div>
                 <div className='w-full border-t border-gray-300' />
